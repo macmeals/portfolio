@@ -1,0 +1,17 @@
+// Webフォントを定義
+// 限界明朝
+@font-face {
+  font-family: "genkai-mincho";
+  src: url("/fonts/genkai-mincho-sanset.woff") format("woff");
+}
+// against
+@font-face {
+  font-family: "my-against";
+  src: url("/fonts/againts.woff2") format("woff2");
+}
+
+//thunder
+@font-face {
+  font-family: "my-thunder";
+  src: url("/fonts/thunder.woff2") format("woff2");
+}

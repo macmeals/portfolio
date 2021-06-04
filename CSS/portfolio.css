@@ -472,11 +472,53 @@ template {
 
 @font-face {
   font-family: "my-against";
-  src: url("/fonts/againts.woff2") format("woff2");
+  src: url("/fonts/againts.woff") format("woff");
 }
 
 @font-face {
   font-family: "my-thunder";
   src: url("/fonts/thunder.woff2") format("woff2");
+}
+
+span {
+  color: red;
+  font-size: 100px;
+}
+
+h1, a {
+  font-family: "my-against";
+  font-size: 80px;
+}
+
+.l-index {
+  height: 100vh;
+  width: 100vw;
+  background: url("/img/Blueback.png") no-repeat center center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-thunderfont {
+  font-family: "my-thunder";
+}
+
+.p-index__image {
+  width: 300px;
+  height: 220px;
+}
+
+.u-margin__index {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=portfolio.css.map */

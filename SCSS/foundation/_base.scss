@@ -7,7 +7,7 @@
 // against
 @font-face {
   font-family: "my-against";
-  src: url("/fonts/againts.woff2") format("woff2");
+  src:url("/fonts/againts.woff") format("woff");
 }
 
 //thunder
@@ -15,3 +15,14 @@
   font-family: "my-thunder";
   src: url("/fonts/thunder.woff2") format("woff2");
 }
+
+span {
+  color: red;
+  font-size: 100px;
+}
+
+h1 , a {
+  font-family:"my-against";
+  font-size: 80px;
+}
+

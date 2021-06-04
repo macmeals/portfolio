@@ -6,6 +6,18 @@
 @import "./foundation/base" ;
 
 // layout
-@import "./layout/header" ;
-@import "./layout/main" ;
-@import "./layout/footer";
+@import "./layout/l-header" ;
+@import "./layout/l-main" ;
+@import "./layout/l-footer";
+
+
+// object-component
+@import "./object/component/c-font";
+
+
+// object-project
+ @import "./object/project/p-index" ;
+
+ 
+// object-utility
+@import "./object/utility/u-margin" ;

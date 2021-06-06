@@ -1,0 +1,43 @@
+// Indexページの左から右へ文字が流れるアニメーション
+
+.c-animationtext {
+  > span {
+            font-size: 200px;
+            color: black;
+         
+         &:nth-of-type(1) {
+          font-size: 250px;
+          color: red;
+         }
+        
+         &:nth-of-type(6) {
+          font-size: 250px;
+          color: red;
+         }
+
+
+         }
+
+}
+
+.c-animationlink {
+  > span {
+            font-size: 100px;
+            color: black;
+         
+         &:nth-of-type(1) {
+          font-size: 150px;
+          color: red;
+         }
+        
+         }
+
+}
+
+.c-thunderanimation {
+  >span {
+    font-size: 100px;
+  }
+}
+
+

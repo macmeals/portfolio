@@ -480,14 +480,8 @@ template {
   src: url("/fonts/thunder.woff2") format("woff2");
 }
 
-span {
-  color: red;
-  font-size: 100px;
-}
-
 h1, a {
   font-family: "my-against";
-  font-size: 80px;
 }
 
 .l-index {
@@ -511,6 +505,35 @@ h1, a {
 
 .c-thunderfont {
   font-family: "my-thunder";
+}
+
+.c-animationtext > span {
+  font-size: 200px;
+  color: black;
+}
+
+.c-animationtext > span:nth-of-type(1) {
+  font-size: 250px;
+  color: red;
+}
+
+.c-animationtext > span:nth-of-type(6) {
+  font-size: 250px;
+  color: red;
+}
+
+.c-animationlink > span {
+  font-size: 100px;
+  color: black;
+}
+
+.c-animationlink > span:nth-of-type(1) {
+  font-size: 150px;
+  color: red;
+}
+
+.c-thunderanimation > span {
+  font-size: 100px;
 }
 
 .p-index__image {

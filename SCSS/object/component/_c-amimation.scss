@@ -2,41 +2,38 @@
 
 .c-animationtext {
   > span {
-            font-size: 200px;
+            font-size: 80px;
             color: black;
          
-         &:nth-of-type(1) {
-          font-size: 250px;
-          color: red;
-         }
-        
-         &:nth-of-type(6) {
-          font-size: 250px;
-          color: red;
-         }
-
-
+            &:nth-of-type(1) {
+             font-size: 100px;
+             color: red;
+            }
+         
+            &:nth-of-type(6) {
+             font-size: 100px;
+             color: red;
+            }
          }
 
 }
 
 .c-animationlink {
   > span {
-            font-size: 100px;
+            font-size: 80px;
             color: black;
          
-         &:nth-of-type(1) {
-          font-size: 150px;
-          color: red;
-         }
+            &:nth-of-type(1) {
+            font-size: 100px;
+            color: red;
+            }
         
          }
-
 }
 
 .c-thunderanimation {
   >span {
-    font-size: 100px;
+    font-size: 80px;
   }
 }
 

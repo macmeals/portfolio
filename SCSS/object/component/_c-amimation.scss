@@ -19,6 +19,9 @@
 }
 
 .c-animationlink {
+  position: absolute;
+  top: 80%;
+   
   > span {
             font-size: 80px;
             color: black;
@@ -32,6 +35,8 @@
 }
 
 .c-thunderanimation {
+  position: absolute;
+  top: 85%;
   >span {
     font-size: 80px;
   }

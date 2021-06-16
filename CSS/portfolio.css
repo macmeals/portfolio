@@ -501,6 +501,7 @@ h1, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .c-thunderfont {
@@ -522,6 +523,11 @@ h1, a {
   color: red;
 }
 
+.c-animationlink {
+  position: absolute;
+  top: 80%;
+}
+
 .c-animationlink > span {
   font-size: 80px;
   color: black;
@@ -530,6 +536,11 @@ h1, a {
 .c-animationlink > span:nth-of-type(1) {
   font-size: 100px;
   color: red;
+}
+
+.c-thunderanimation {
+  position: absolute;
+  top: 85%;
 }
 
 .c-thunderanimation > span {

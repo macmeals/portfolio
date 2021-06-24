@@ -19,6 +19,12 @@
       height: $pc-record_size;
     }
 
+    &__owner {
+      width: $pc-owner_size ;
+      height: $pc-owner_size;
+  
+    }
+
     &__work {
       width: $pc-work_size;
       height: $pc-work_size;

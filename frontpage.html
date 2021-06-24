@@ -8,12 +8,10 @@
             <title>TOMO PORTFOLIO</title>
             <link rel="stylesheet" href="./CSS/portfolio.css">
             <!-- スライダー用のCSS -->
-            <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
-            <link rel="stylesheet" type="text/css" href="CSS/slick-theme.css"/>
-
-            
-
+            <!-- <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
+            <link rel="stylesheet" type="text/css" href="CSS/slick-theme.css"/> -->
             <!-- Pageネーション用のJQueryjとJs -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <script type="text/javascript" src="js/paginathing.min.js"></script>
             <script type="text/javascript" src="js/image-pagenation.js"></script>
 
@@ -47,7 +45,7 @@
                         </div>
                         <div class="p-introduction__content">
                             <div class="p-introduction__left">
-                                 <img src="./img/twitter_rj3PKCYw_400x400.png" alt="SiteOwnerのアバターです。">
+                                 <img src="./img/twitter_rj3PKCYw_400x400.png" alt="SiteOwnerのアバターです。" class="c-image__owner">
                                  <p><span>T</span>OMO</p>
                             </div>
                             <div class="p-introduction__right">
@@ -55,22 +53,94 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-work">
-                        <div class="p-work__top">
+                    <div class="p-frontwork">
+                        <div class="p-frontwork__top">
                             <img src="./img/record.png" alt="toppageのシンボルです" class="c-image__record">
                             <h2><span>W</span>ork</h2>
                             <p>実績紹介</p>
                         </div>
                         <p>作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。作品紹介が入ります。</p>
-                        <ul class="p-pagenation">
-                            <li><a><img src="./img/cheeseburger2.png" alt="画像1枚めです" class=c-image__work></a></li>
-                            <li><a><img src="./img/cheeseburger2.png" alt="画像2枚目です" class=c-image__work></a></li>
-                            <li><a><img src="./img/cheeseburger2.png" alt="画像3枚目です" class=c-image__work></a></li>
-                            <li><a><img src="./img/cheeseburger2.png" alt="画像4枚目です" class=c-image__work></a></li>
-                            <li><a><img src="./img/cheeseburger2.png" alt="画像5枚目です" class=c-image__work></a></li>
-                        </ul>
-
-
+                        <div class="p-pagenation">
+                            <dl>
+                                <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">（仮想サイト）</br>ハンバーガーサイト１</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">（仮想サイト）</br>ハンバーガーサイト２</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">（仮想サイト）</br>ハンバーガーサイト３</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">（仮想サイト）</br>ハンバーガーサイト４</a></dd> 
+                            </dl>
+                       </div>
+                    </div>
+                    <div class="p-frontservice">
+                        <div class="p-frontservice__top">
+                            <img src="./img/record.png" alt="toppageのシンボルです" class="c-image__record">
+                            <h2><span>S</span>ervice</h2>
+                            <p>WEBサイトの構築について</p>
+                        </div>
+                        <p>補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。補足説明が入ります。</p>
+                        <div class="p-pagenation">
+                            <dl>
+                                <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">ご提供できるスキル</br>技術について</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">WEBサイトの種類</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">WEBサイト制作の</br>ご依頼の流れ</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a  href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__work></a></dt>
+                                <dd><a  href="#">WEBデザインの種類について</a></dd> 
+                            </dl>
+                       </div>
+                    </div>
+                    <div class="p-frontprice">
+                        <div class="p-frontprice__top">
+                            <img src="./img/record.png" alt="toppageのシンボルです" class="c-image__record">
+                            <h2><span>P</span>rice</h2>
+                            <p>価格について</p>
+                        </div>
+                        <p>価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。価格についての説明が入ります。</p>
+                        <p>詳しくは<a href="#">こちら</a>から</p>
+                    </div>
+                    <div class="p-frontblog">
+                        <div class="p-frontblog__top">
+                            <img src="./img/record.png" alt="toppageのシンボルです" class="c-image__record">
+                            <h2><span>B</span>log</h2>
+                        </div>
+                        <div class="p-pagenation">
+                            <dl>
+                                <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">2021.XX.XX</a></dd>
+                                <dd><a href="#">初めてのブログの</br>立ち上げについて</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">2021.XX.XX</a></dd>
+                                <dd><a href="#">HTML&CSSでの<br>WEBサイト制作①</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">2021.XX.XX</a></dd>
+                                <dd><a href="#">HTML&CSSでの<br>WEBサイト制作②</a></dd> 
+                            </dl>
+                            <dl>
+                                <dt><a  href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__work></a></dt>
+                                <dd><a href="#">2021.XX.XX</a></dd>
+                                <dd><a href="#">HTML&CSSでの<br>WEBサイト制作③</a></dd> 
+                            </dl>
+                       </div>
 
                     </div>
 

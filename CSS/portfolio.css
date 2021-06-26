@@ -484,6 +484,10 @@ h1, a {
   font-family: "my-against";
 }
 
+span {
+  color: red;
+}
+
 .l-index {
   height: 100vh;
   width: 100vw;
@@ -545,6 +549,36 @@ h1, a {
 
 .c-thunderanimation > span {
   font-size: 80px;
+}
+
+.c-image__cat {
+  width: 200px;
+  height: 150px;
+}
+
+.c-image__skull {
+  width: 120px;
+  height: 120px;
+}
+
+.c-image__twitter {
+  width: 50px;
+  height: 50px;
+}
+
+.c-image__record {
+  width: 50px;
+  height: 50px;
+}
+
+.c-image__owner {
+  width: 215px;
+  height: 215px;
+}
+
+.c-image__work {
+  width: 225px;
+  height: 225px;
 }
 
 .p-index__image {

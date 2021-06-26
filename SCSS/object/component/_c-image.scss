@@ -1,0 +1,33 @@
+.c-image {
+    &__cat {
+      width: $pc-djcat_width;
+      height: $pc-djcat_height;
+    }
+    
+    &__skull {
+      width: $pc-skull_size;
+      height: $pc-skull_size;
+    }
+
+    &__twitter {
+      width: $twitter_size;
+      height: $twitter_size;
+    }
+
+    &__record {
+      width: $pc-record_size;
+      height: $pc-record_size;
+    }
+
+    &__owner {
+      width: $pc-owner_size ;
+      height: $pc-owner_size;
+  
+    }
+
+    &__work {
+      width: $pc-work_size;
+      height: $pc-work_size;
+    }
+
+}

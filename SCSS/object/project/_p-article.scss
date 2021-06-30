@@ -1,0 +1,23 @@
+.p-frontarticle {
+  position: absolute;
+  left: 20vw;
+  width: 80vw ;
+  background-color: #FAF9F2 ;
+  
+  
+}
+
+.p-frontside {
+    overflow-y:scroll ;
+
+    >p {
+        font-size: 50px;
+        font-family:"my-against";
+    }
+
+    >ul {
+        font-size: 30px;
+        font-family:"my-against";
+        
+    }
+}

@@ -1,9 +1,29 @@
-.p-index {
-      &__image {
-        width: 300px;
-        height: 220px;
-        
-        
-      }
+.p-index { 
+    display: flex;
+    flex-direction: column;
+    // background-color: red;
+    align-items: center;
+    width: 60vw;
+    height: 100vh;
+    position: relative;
 
+    &__indexdjcat {
+      position: absolute;
+      top: 10vh
+    }
+
+    &__animationtext {
+      position: absolute;
+      top: 28vh;
+    }
+
+    &__animationlink {
+      position: absolute;
+      top: 70vh;
+    }
+
+    &__thunderfont {
+      position: absolute;
+      top: 80vh;
+    }
 }

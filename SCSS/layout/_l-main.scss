@@ -1,11 +1,12 @@
+// topページ（一番最初のページ）の全体のCSS
 .l-index {
   height: 100vh;
   width: 100vw;
-  background: url("/img/Blueback.png") no-repeat center center / cover;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  background: url("/img/frontpage_background.jpg") no-repeat center center / cover;
+
+  }
+
+.l-frontmain {
   position: relative;
   
-  }
+}

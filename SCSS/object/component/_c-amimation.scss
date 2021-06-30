@@ -6,12 +6,12 @@
             color: black;
          
             &:nth-of-type(1) {
-             font-size: 100px;
+             font-size: 120px;
              color: red;
             }
          
             &:nth-of-type(6) {
-             font-size: 100px;
+             font-size: 120px;
              color: red;
             }
          }
@@ -19,11 +19,8 @@
 }
 
 .c-animationlink {
-  position: absolute;
-  top: 80%;
-   
   > span {
-            font-size: 80px;
+            font-size: 50px;
             color: black;
          
             &:nth-of-type(1) {
@@ -35,10 +32,8 @@
 }
 
 .c-thunderanimation {
-  position: absolute;
-  top: 85%;
   >span {
-    font-size: 80px;
+    font-size: 50px;
   }
 }
 

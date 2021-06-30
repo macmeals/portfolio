@@ -480,8 +480,12 @@ template {
   src: url("/fonts/thunder.woff2") format("woff2");
 }
 
-h1, a {
+h1, h2, ul, a {
   font-family: "my-against";
+}
+
+ul {
+  font-size: 30px;
 }
 
 span {
@@ -491,21 +495,16 @@ span {
 .l-index {
   height: 100vh;
   width: 100vw;
-  background: url("/img/Blueback.png") no-repeat center center/cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: url("/img/frontpage_background.jpg") no-repeat center center/cover;
+}
+
+.l-frontmain {
   position: relative;
+}
+
+.l-frontfooter {
+  height: 10vh;
+  background-color: red;
 }
 
 .c-thunderfont {
@@ -518,22 +517,17 @@ span {
 }
 
 .c-animationtext > span:nth-of-type(1) {
-  font-size: 100px;
+  font-size: 120px;
   color: red;
 }
 
 .c-animationtext > span:nth-of-type(6) {
-  font-size: 100px;
+  font-size: 120px;
   color: red;
 }
 
-.c-animationlink {
-  position: absolute;
-  top: 80%;
-}
-
 .c-animationlink > span {
-  font-size: 80px;
+  font-size: 50px;
   color: black;
 }
 
@@ -542,16 +536,17 @@ span {
   color: red;
 }
 
-.c-thunderanimation {
-  position: absolute;
-  top: 85%;
+.c-thunderanimation > span {
+  font-size: 50px;
 }
 
-.c-thunderanimation > span {
-  font-size: 80px;
+.c-image__indexdjcat {
+  width: 200px;
+  height: 150px;
 }
 
 .c-image__cat {
+  display: block;
   width: 200px;
   height: 150px;
 }
@@ -581,12 +576,95 @@ span {
   height: 225px;
 }
 
-.p-index__image {
-  width: 300px;
-  height: 220px;
+.p-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60vw;
+  height: 100vh;
+  position: relative;
+}
+
+.p-index__indexdjcat {
+  position: absolute;
+  top: 10vh;
+}
+
+.p-index__animationtext {
+  position: absolute;
+  top: 28vh;
+}
+
+.p-index__animationlink {
+  position: absolute;
+  top: 70vh;
+}
+
+.p-index__thunderfont {
+  position: absolute;
+  top: 80vh;
+}
+
+.p-frontarticle {
+  position: absolute;
+  left: 20vw;
+  width: 80vw;
+  background-color: #FAF9F2;
+}
+
+.p-frontside {
+  overflow-y: scroll;
+}
+
+.p-frontside > p {
+  font-size: 50px;
+  font-family: "my-against";
+}
+
+.p-frontside > ul {
+  font-size: 30px;
+  font-family: "my-against";
+}
+
+.p-frontside {
+  position: relative;
+  position: fixed;
+  width: 20vw;
+  height: 100vh;
+  background: url("/img/Blueback.png");
+  background-size: 20vw 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-frontside > h2 {
+  font-size: 50px;
 }
 
 .u-margin__index {
   margin-bottom: 40px;
+}
+
+.u-margin__asidetop {
+  margin-top: 40px;
+}
+
+.u-margin__asidebottom {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=portfolio.css.map */

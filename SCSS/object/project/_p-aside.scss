@@ -1,0 +1,17 @@
+.p-frontside {
+  position: relative;
+  position: fixed;
+  width:  20vw;
+  height: 100vh;
+  background: url("/img/Blueback.png")  ;
+  background-size: 20vw 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  >h2 {
+    font-size: 50px;
+
+  }
+  
+}

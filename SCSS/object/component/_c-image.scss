@@ -1,5 +1,12 @@
 .c-image {
+    &__indexdjcat {
+      width: $pc-indexdjcat_width;
+      height: $pc-indexdjcat_height;
+
+    }
+
     &__cat {
+      display: block;
       width: $pc-djcat_width;
       height: $pc-djcat_height;
     }

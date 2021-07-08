@@ -499,7 +499,9 @@ span {
 }
 
 .l-frontmain {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .l-frontfooter {
@@ -546,7 +548,6 @@ span {
 }
 
 .c-image__cat {
-  display: block;
   width: 200px;
   height: 150px;
 }
@@ -613,8 +614,6 @@ span {
 }
 
 .p-frontarticle {
-  position: absolute;
-  left: 20vw;
   width: 80vw;
   background-color: #FAF9F2;
 }
@@ -634,10 +633,7 @@ span {
 }
 
 .p-frontside {
-  position: relative;
-  position: fixed;
   width: 20vw;
-  height: 100vh;
   background: url("/img/Blueback.png");
   background-size: 20vw 100vh;
   display: -webkit-box;

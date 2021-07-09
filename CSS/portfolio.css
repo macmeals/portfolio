@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -465,6 +466,9 @@ template {
   display: none;
 }
 
+/* PCはWidthが1200pxより大きい */
+/* タブレットはWidthが1200pxより小さい */
+/* スマホはWidthが700pxより小さい */
 @font-face {
   font-family: "genkai-mincho";
   src: url("/fonts/genkai-mincho-sanset.woff") format("woff");
@@ -492,6 +496,12 @@ span {
   color: red;
 }
 
+@media (min-width: 1201px) {
+  .l-header {
+    display: none;
+  }
+}
+
 .l-index {
   height: 100vh;
   width: 100vw;
@@ -504,9 +514,10 @@ span {
   display: flex;
 }
 
-.l-frontfooter {
-  height: 10vh;
-  background-color: red;
+@media (min-width: 1201px) {
+  .l-footer {
+    display: none;
+  }
 }
 
 .c-thunderfont {

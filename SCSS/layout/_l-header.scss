@@ -1,0 +1,5 @@
+.l-header {
+    @include pc {
+        display: none;
+    }
+}

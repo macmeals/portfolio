@@ -1,4 +1,5 @@
-.l-frontfooter {
-  height: 10vh;
-  background-color: red;
+.l-footer {
+    @include pc {
+        display: none;
+    }
 }

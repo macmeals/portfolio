@@ -24,3 +24,16 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
     @content ;
   }
 }
+
+
+//サブタイトルの並び順(h2タブを利用する前提）
+ @mixin subtitle ($subtitle_height){
+     display: flex;
+     align-items: center;
+     height: $subtitle_height;
+     background-color:palevioletred;
+     
+     >h2 { margin: 0 40px 0 20px;
+     }
+
+ }

@@ -532,6 +532,10 @@ span {
   font-size: 30px;
 }
 
+.c-sutitlefont {
+  font-size: 100px;
+}
+
 .c-animationtext > span {
   font-size: 80px;
   color: black;
@@ -634,21 +638,93 @@ span {
 
 .p-frontarticle {
   width: 80vw;
-  background-color: #FAF9F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "genkai-mincho";
+  line-height: 150%;
 }
 
-.p-frontside__fix {
-  position: fixed;
+.p-frontarticle__wrap {
+  width: 75vw;
+  background-color: green;
 }
 
-.p-frontside > p {
-  font-size: 50px;
-  font-family: "my-against";
+.p-introduction__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  background-color: palevioletred;
 }
 
-.p-frontside > ul {
-  font-size: 30px;
-  font-family: "my-against";
+.p-introduction__top > h2 {
+  margin: 0 40px 0 20px;
+}
+
+.p-introduction__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-introduction__left {
+  width: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-introduction__right {
+  width: calc(100% - $pc-owner_size);
+}
+
+.p-introduction__right > p {
+  margin-bottom: 30px;
+}
+
+.p-frontwork__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  background-color: palevioletred;
+}
+
+.p-frontwork__top > h2 {
+  margin: 0 40px 0 20px;
+}
+
+.p-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-pagination__class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .p-frontside {

@@ -1,24 +1,59 @@
 .p-frontarticle {
-  width: 80vw ;
-  background-color: #FAF9F2 ;
-  
-  
+    width: 80vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "genkai-mincho";
+    line-height: 150%;
+
+    &__wrap {
+        width: 75vw;
+        background-color: green;
+
+    }
+
 }
 
-.p-frontside {
-    // overflow-y:scroll ;
-    &__fix {
-        position: fixed;
+.p-introduction {
+    &__top {
+        @include subtitle(115px);
     }
+
+    &__content {
+        display: flex;
+    }
+
+    &__left {
+        width:$pc-owner_size ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
-    >p {
-        font-size: 50px;
-        font-family:"my-against";
     }
 
-    >ul {
-        font-size: 30px;
-        font-family:"my-against";
-        
+    &__right {
+        width: calc(100% - $pc-owner_size);
+
+        >p {
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
+
+.p-frontwork {
+    &__top {
+        @include subtitle(115px);    
     }
 }
+
+.p-pagination {
+    display: flex;
+
+    &__class {
+        display: flex;
+    }
+}
+
+

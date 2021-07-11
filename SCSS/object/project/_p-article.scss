@@ -6,8 +6,11 @@
 }
 
 .p-frontside {
-    overflow-y:scroll ;
-
+    // overflow-y:scroll ;
+    &__fix {
+        position: fixed;
+    }
+    
     >p {
         font-size: 50px;
         font-family:"my-against";

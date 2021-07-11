@@ -1,4 +1,15 @@
 .c-thunderfont {
-  font-family: "my-thunder";
+    font-family: "my-thunder";
+}
+
+.c-againstfont {
+    font-family:"my-against";
+
+    &__side {
+        @extend .c-againstfont ;
+        font-size: 30px;
+       
+    }
+
 }
 

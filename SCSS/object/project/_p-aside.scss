@@ -1,16 +1,25 @@
 .p-frontside {
-  
-  width:  20vw;
-  
-  background: url("/img/Blueback.png")  ;
-  background-size: 20vw 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   background-image: url(/img/gradation_background.jpg);
+   background-size :cover;
+   width: 20vw;
 
-  >h2 {
-    font-size: 50px;
-
+  
+  &__fix {
+      position: fixed;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  
+  >p {
+      font-size: 50px;
+      font-family:"my-against";
   }
-  
+
+  >ul {
+      font-size: 30px;
+      font-family:"my-against";
+      
+  }
 }

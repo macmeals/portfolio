@@ -524,6 +524,14 @@ span {
   font-family: "my-thunder";
 }
 
+.c-againstfont, .c-againstfont__side {
+  font-family: "my-against";
+}
+
+.c-againstfont__side {
+  font-size: 30px;
+}
+
 .c-animationtext > span {
   font-size: 80px;
   color: black;
@@ -564,13 +572,13 @@ span {
 }
 
 .c-image__skull {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
 }
 
 .c-image__twitter {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .c-image__record {
@@ -629,8 +637,8 @@ span {
   background-color: #FAF9F2;
 }
 
-.p-frontside {
-  overflow-y: scroll;
+.p-frontside__fix {
+  position: fixed;
 }
 
 .p-frontside > p {
@@ -644,9 +652,14 @@ span {
 }
 
 .p-frontside {
+  background-image: url(/img/gradation_background.jpg);
+  background-size: cover;
   width: 20vw;
-  background: url("/img/Blueback.png");
-  background-size: 20vw 100vh;
+}
+
+.p-frontside__fix {
+  position: fixed;
+  width: 20vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,8 +672,14 @@ span {
           align-items: center;
 }
 
-.p-frontside > h2 {
+.p-frontside > p {
   font-size: 50px;
+  font-family: "my-against";
+}
+
+.p-frontside > ul {
+  font-size: 30px;
+  font-family: "my-against";
 }
 
 .u-margin__index {
@@ -668,10 +687,18 @@ span {
 }
 
 .u-margin__asidetop {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+.u-margin__asidetop > li {
+  margin-top: 5px;
 }
 
 .u-margin__asidebottom {
   margin-bottom: 20px;
+}
+
+.u-margin__asidebottom > li {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=portfolio.css.map */

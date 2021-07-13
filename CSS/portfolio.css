@@ -520,6 +520,10 @@ span {
   }
 }
 
+.c-genkaifont {
+  font-family: "genkai-mincho";
+}
+
 .c-thunderfont {
   font-family: "my-thunder";
 }
@@ -692,12 +696,12 @@ span {
           align-items: center;
 }
 
-.p-introduction__right {
-  width: calc(100% - $pc-owner_size);
-}
-
 .p-introduction__right > p {
   margin-bottom: 30px;
+}
+
+.p-frontwork {
+  margin-top: 100px;
 }
 
 .p-frontwork__top {
@@ -722,9 +726,95 @@ span {
 }
 
 .p-pagination__class {
+  width: 775px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 0 50px;
+}
+
+.p-pagination__class > .prev {
+  position: relative;
+}
+
+.p-pagination__class > .prev > a::after {
+  position: absolute;
+  content: "Ene";
+  color: red;
+  top: 15px;
+  left: 5px;
+  font-family: "my-thunder";
+  font-size: 25px;
+}
+
+.p-pagination__class > .next {
+  position: relative;
+}
+
+.p-pagination__class > .next > a::after {
+  position: absolute;
+  content: "Ene";
+  color: red;
+  top: 15px;
+  right: 5px;
+  font-family: "my-thunder";
+  font-size: 25px;
+}
+
+.p-pagination__class > .page {
+  display: none;
+}
+
+.p-pagination__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-pagination__text > dt {
+  margin-left: 50px;
+}
+
+.p-pagination__text > dd {
+  margin-left: 50px;
+}
+
+.p-pagination__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-frontservice {
+  margin-top: 100px;
+}
+
+.p-frontservice__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  background-color: palevioletred;
+}
+
+.p-frontservice__top > h2 {
+  margin: 0 40px 0 20px;
 }
 
 .p-frontside {

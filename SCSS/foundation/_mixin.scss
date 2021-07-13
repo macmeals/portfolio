@@ -37,3 +37,10 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
      }
 
  }
+
+//  コンテンツをセンターに寄せる為のMIXIN
+ @mixin centercontent {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }

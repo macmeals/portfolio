@@ -1,8 +1,6 @@
 .p-frontarticle {
     width: 80vw ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include centercontent ;
     font-family: "genkai-mincho";
     line-height: 150%;
 
@@ -25,34 +23,87 @@
 
     &__left {
         width:$pc-owner_size ;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
+        @include centercontent ;
     }
 
     &__right {
-        width: calc(100% - $pc-owner_size);
-
         >p {
             margin-bottom: 30px;
         }
-
     }
 
 }
 
 .p-frontwork {
+    margin-top: 100px;
     &__top {
         @include subtitle(115px);    
     }
 }
 
 .p-pagination {
-    display: flex;
+   display: flex;
 
     &__class {
+        width: 775px ;
         display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0 50px;
+
+        >.prev {
+            position: relative;
+            > a::after {
+                position: absolute;
+                content: "Ene";
+                color: red;
+                top: 15px;
+                left: 5px;
+                font-family: "my-thunder";
+                font-size: 25px;
+            }
+            
+        }
+        >.next {
+            position: relative;
+            > a::after {
+                position: absolute;
+                content: "Ene";
+                color: red;
+                top: 15px;
+                right: 5px;
+                font-family: "my-thunder";
+                font-size: 25px;
+            }
+        }
+         
+        >.page {
+            display: none;
+            
+        }
+    }
+
+    &__text {
+        @include centercontent ;
+
+        >dt {
+            margin-left: 50px;
+        }
+        >dd {
+            margin-left: 50px;
+        }
+       
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-frontservice {
+    margin-top: 100px;
+    &__top {
+        @include subtitle(115px);    
     }
 }
 

@@ -540,6 +540,12 @@ span {
   font-size: 100px;
 }
 
+.c-redunderline {
+  text-decoration: underline;
+  color: red;
+  font-family: "genkai-mincho";
+}
+
 .c-animationtext > span {
   font-size: 80px;
   color: black;
@@ -814,6 +820,50 @@ span {
 }
 
 .p-frontservice__top > h2 {
+  margin: 0 40px 0 20px;
+}
+
+.p-frontservice > p {
+  margin: 10px 0 10px 0;
+}
+
+.p-frontprice {
+  margin-top: 100px;
+}
+
+.p-frontprice__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  background-color: palevioletred;
+  margin-bottom: 10px;
+}
+
+.p-frontprice__top > h2 {
+  margin: 0 40px 0 20px;
+}
+
+.p-frontblog {
+  margin-top: 100px;
+}
+
+.p-frontblog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  background-color: palevioletred;
+  margin-bottom: 10px;
+}
+
+.p-frontblog__top > h2 {
   margin: 0 40px 0 20px;
 }
 

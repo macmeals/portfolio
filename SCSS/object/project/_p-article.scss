@@ -105,6 +105,26 @@
     &__top {
         @include subtitle(115px);    
     }
+
+    >p {
+        margin: 10px 0 10px 0;
+    }
 }
 
+.p-frontprice {
+    margin-top: 100px;
+    &__top {
+        @include subtitle(115px); 
+        margin-bottom: 10px;   
+    }
+
+}
+
+.p-frontblog {
+    margin-top: 100px;
+    &__top {
+        @include subtitle(115px); 
+        margin-bottom: 10px;   
+    }
+}
 

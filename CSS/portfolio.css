@@ -664,7 +664,6 @@ span {
 
 .p-frontarticle__wrap {
   width: 75vw;
-  background-color: green;
 }
 
 .p-introduction__top {
@@ -675,7 +674,6 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 115px;
-  background-color: palevioletred;
 }
 
 .p-introduction__top > h2 {
@@ -718,7 +716,6 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 115px;
-  background-color: palevioletred;
 }
 
 .p-frontwork__top > h2 {
@@ -816,7 +813,6 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 115px;
-  background-color: palevioletred;
 }
 
 .p-frontservice__top > h2 {
@@ -839,7 +835,6 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 115px;
-  background-color: palevioletred;
   margin-bottom: 10px;
 }
 
@@ -859,11 +854,29 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 115px;
-  background-color: palevioletred;
   margin-bottom: 10px;
 }
 
 .p-frontblog__top > h2 {
+  margin: 0 40px 0 20px;
+}
+
+.p-frontcontact {
+  margin: 100px 0 100px 0;
+}
+
+.p-frontcontact__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 115px;
+  margin-bottom: 10px;
+}
+
+.p-frontcontact__top > h2 {
   margin: 0 40px 0 20px;
 }
 

@@ -6,7 +6,7 @@
 
     &__wrap {
         width: 75vw;
-        background-color: green;
+        
 
     }
 
@@ -128,3 +128,11 @@
     }
 }
 
+.p-frontcontact {
+    margin: 100px 0 100px 0;
+    &__top {
+        @include subtitle(115px); 
+        margin-bottom: 10px;   
+    }
+
+}

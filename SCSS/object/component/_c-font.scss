@@ -1,4 +1,30 @@
-.c-thunderfont {
-  font-family: "my-thunder";
+.c-genkaifont {
+    font-family: "genkai-mincho";
 }
+
+.c-thunderfont {
+    font-family: "my-thunder";
+}
+
+.c-againstfont {
+    font-family:"my-against";
+
+    &__side {
+        @extend .c-againstfont ;
+        font-size: 30px;
+       
+    }
+
+}
+
+.c-sutitlefont { 
+    font-size: 100px;
+}
+
+.c-redunderline {
+    text-decoration: underline;
+    color: red;
+    font-family: "genkai-mincho";
+}
+
 

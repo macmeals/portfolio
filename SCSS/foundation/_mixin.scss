@@ -1,0 +1,45 @@
+//メデイアクエリの管理
+$pc :1201px;        /* PCはWidthが1200pxより大きい */
+$tablet:1200px;     /* タブレットはWidthが1200pxより小さい */
+$smartphone:699px;  /* スマホはWidthが700pxより小さい */
+
+
+// PCのメディアクエリ
+@mixin pc {
+  @media (min-width:($pc)){
+    @content;
+  }
+}
+
+// タブレットのメディアクエリ
+@mixin tablet {
+  @media (max-width:($tablet))  {
+    @content;
+  }
+}
+
+// スマートフォンのメディアクエリ
+@mixin smartphone {
+  @media (max-width:($smartphone)){
+    @content ;
+  }
+}
+
+
+//サブタイトルの並び順(h2タブを利用する前提）
+ @mixin subtitle ($subtitle_height){
+     display: flex;
+     align-items: center;
+     height: $subtitle_height;
+     
+     >h2 { margin: 0 40px 0 20px;
+     }
+
+ }
+
+//  コンテンツをセンターに寄せる為のMIXIN
+ @mixin centercontent {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }

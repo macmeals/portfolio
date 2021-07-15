@@ -1,0 +1,25 @@
+.p-frontside {
+   background-image: url(/img/gradation_background.jpg);
+   background-size :cover;
+   width: 20vw;
+
+  
+  &__fix {
+      position: fixed;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+  
+  >p {
+      font-size: 50px;
+      font-family:"my-against";
+  }
+
+  >ul {
+      font-size: 30px;
+      font-family:"my-against";
+      
+  }
+}

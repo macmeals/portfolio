@@ -528,12 +528,20 @@ span {
   font-family: "my-thunder";
 }
 
-.c-againstfont, .c-againstfont__side {
+.c-againstfont, .c-againstfont__side, .c-againstfont__sidemenu, .c-againstfont__sidelink {
   font-family: "my-against";
 }
 
 .c-againstfont__side {
-  font-size: 30px;
+  font-size: 50px;
+}
+
+.c-againstfont__sidemenu {
+  font-size: 40px;
+}
+
+.c-againstfont__sidelink {
+  font-size: 25px;
 }
 
 .c-sutitlefont {
@@ -676,7 +684,7 @@ span {
   height: 115px;
 }
 
-.p-introduction__top > h2 {
+.p-introduction__top > a {
   margin: 0 40px 0 20px;
 }
 
@@ -700,8 +708,16 @@ span {
           align-items: center;
 }
 
-.p-introduction__right > p {
-  margin-bottom: 30px;
+.p-introduction__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .p-frontwork {
@@ -718,7 +734,7 @@ span {
   height: 115px;
 }
 
-.p-frontwork__top > h2 {
+.p-frontwork__top > a {
   margin: 0 40px 0 20px;
 }
 
@@ -815,7 +831,7 @@ span {
   height: 115px;
 }
 
-.p-frontservice__top > h2 {
+.p-frontservice__top > a {
   margin: 0 40px 0 20px;
 }
 
@@ -838,7 +854,7 @@ span {
   margin-bottom: 10px;
 }
 
-.p-frontprice__top > h2 {
+.p-frontprice__top > a {
   margin: 0 40px 0 20px;
 }
 
@@ -857,7 +873,7 @@ span {
   margin-bottom: 10px;
 }
 
-.p-frontblog__top > h2 {
+.p-frontblog__top > a {
   margin: 0 40px 0 20px;
 }
 
@@ -876,7 +892,7 @@ span {
   margin-bottom: 10px;
 }
 
-.p-frontcontact__top > h2 {
+.p-frontcontact__top > a {
   margin: 0 40px 0 20px;
 }
 

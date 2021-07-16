@@ -27,9 +27,10 @@
     }
 
     &__right {
-        >p {
-            margin-bottom: 30px;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
     }
 
 }

@@ -11,7 +11,19 @@
 
     &__side {
         @extend .c-againstfont ;
-        font-size: 30px;
+        font-size: 50px;
+       
+    }
+
+    &__sidemenu {
+        @extend .c-againstfont ;
+        font-size: 40px;
+       
+    }
+
+    &__sidelink {
+        @extend .c-againstfont ;
+        font-size: 25px;
        
     }
 

@@ -1,5 +1,10 @@
-.l-header {
+.l-frontheader {
     @include pc {
         display: none;
     }
+}
+
+.l-workheader {
+    width: 80%;
+    display: flex;
 }

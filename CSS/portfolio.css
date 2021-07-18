@@ -497,9 +497,16 @@ span {
 }
 
 @media (min-width: 1201px) {
-  .l-header {
+  .l-frontheader {
     display: none;
   }
+}
+
+.l-workheader {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .l-index {
@@ -515,7 +522,7 @@ span {
 }
 
 @media (min-width: 1201px) {
-  .l-footer {
+  .l-frontfooter {
     display: none;
   }
 }

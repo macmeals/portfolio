@@ -1,0 +1,33 @@
+.p-workheader {
+    &__wrap {
+        width: 80%;
+        background-color: blue;
+        display: flex;
+
+    }
+
+    &__left {
+        @include centercontent;
+        margin-right: 80px;
+    }
+
+    &__title { 
+        @include subtitle(150px);
+    }
+
+    &__pankuzu {
+        display: flex;
+
+        >a , p {
+          font-family: "genkai-mincho";
+        }
+        
+        >p {
+          margin: 0 5px 0 5px;
+        }
+
+    }
+
+
+
+}

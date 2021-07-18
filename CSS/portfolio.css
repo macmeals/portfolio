@@ -503,10 +503,18 @@ span {
 }
 
 .l-workheader {
-  width: 80%;
+  width: 100vw;
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .l-index {
@@ -934,6 +942,56 @@ span {
   font-family: "my-against";
 }
 
+.p-workheader__wrap {
+  width: 80%;
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-workheader__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 80px;
+}
+
+.p-workheader__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+}
+
+.p-workheader__title > a {
+  margin: 0 40px 0 20px;
+}
+
+.p-workheader__pankuzu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-workheader__pankuzu > a, .p-workheader__pankuzu p {
+  font-family: "genkai-mincho";
+}
+
+.p-workheader__pankuzu > p {
+  margin: 0 5px 0 5px;
+}
+
 .u-margin__index {
   margin-bottom: 40px;
 }
@@ -952,5 +1010,9 @@ span {
 
 .u-margin__asidebottom > li {
   margin-bottom: 5px;
+}
+
+.u-margin__worktop {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,8 @@
+// slick.jp の独自のクラスを使ってdotの大きさを変更
+.slick-dots {
+    > li {
+        > button::before {
+          font-size: 50px;
+        }  
+    } 
+}

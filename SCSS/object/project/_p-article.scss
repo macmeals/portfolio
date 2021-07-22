@@ -138,3 +138,14 @@
 
 }
 
+.p-workarticle {
+    width: 70vw;
+}
+
+.p-slider {
+    width: 70vw;
+    
+    >img {
+        height: 400px;
+    }
+}

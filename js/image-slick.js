@@ -1,8 +1,8 @@
 $(document).ready(function(){
-  $('.c-slider').slick({
+  $('.p-slider').slick({
     dots: true, 
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1
 
   });

@@ -529,6 +529,20 @@ span {
   display: flex;
 }
 
+.l-workmain {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 1201px) {
   .l-frontfooter {
     display: none;
@@ -631,6 +645,15 @@ span {
 .c-image__work {
   width: 225px;
   height: 225px;
+}
+
+.c-image__slick {
+  width: 70vw;
+  height: 500px;
+}
+
+.slick-dots > li > button::before {
+  font-size: 50px;
 }
 
 .p-index {
@@ -911,6 +934,18 @@ span {
   margin: 0 40px 0 20px;
 }
 
+.p-workarticle {
+  width: 70vw;
+}
+
+.p-slider {
+  width: 70vw;
+}
+
+.p-slider > img {
+  height: 400px;
+}
+
 .p-frontside {
   background-image: url(/img/gradation_background.jpg);
   background-size: cover;
@@ -942,8 +977,14 @@ span {
   font-family: "my-against";
 }
 
+@media (min-width: 1201px) {
+  .p-workside {
+    display: none;
+  }
+}
+
 .p-workheader__wrap {
-  width: 80%;
+  width: 70%;
   background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;

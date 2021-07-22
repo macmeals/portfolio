@@ -6,15 +6,22 @@
     <meta name="description" content="副業用の作品集サイトです">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOMO PORTFOLIO</title>
-    <link rel="stylesheet" href="./CSS/portfolio.css">
+    
     <!-- スライダー用のCSS -->
     <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
     <link rel="stylesheet" type="text/css" href="CSS/slick-theme.css"/>
+
+    <!-- 全体の用のCSS -->
+    <link rel="stylesheet" href="./CSS/portfolio.css">
 
     <!-- Pageネーション用のJQueryjとJs -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/paginathing.min.js"></script>
     <script type="text/javascript" src="js/image-pagenation.js"></script>
+
+    <!-- スライダー用のJQueryjとJs -->
+    <script type="text/javascript" src="js/image-slick.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
 
   </head>
 <body>
@@ -54,11 +61,13 @@
             </ul>
             <a href="#"><img src="./img/Twittersocialicons.png" alt="SiteOwnerのTwitterページのリンクです" class="c-image__twitter"></a>
         </aside>
-        <article>
-            <img src="./img/work1.jpg" alt="画像1枚目">
-            <img src="./img/work2.jpg" alt="画像2枚目">
-            <img src="./img/work3.jpg" alt="画像3枚目">
-            <img src="./img/work4.jpg" alt="画像4枚目">
+        <article class="p-workarticle">
+            <div class="p-slider u-margin__worktop">
+                <img src="./img/work1.jpg" alt="画像1枚目" class="c-image__slick">
+                <img src="./img/work2.jpg" alt="画像2枚目" class="c-image__slick">
+                <img src="./img/work3.jpg" alt="画像3枚目" class="c-image__slick">
+                <img src="./img/work4.jpg" alt="画像4枚目" class="c-image__slick">
+            </div>
             <div>
                 <div>Webディレクション</div>
                 <div>Webデザイン</div>

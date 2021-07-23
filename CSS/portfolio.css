@@ -484,7 +484,7 @@ template {
   src: url("/fonts/thunder.woff2") format("woff2");
 }
 
-h1, h2, ul, a {
+h1, h2, h3, ul, a {
   font-family: "my-against";
 }
 
@@ -938,12 +938,38 @@ span {
   width: 70vw;
 }
 
+.p-workarticle > p {
+  font-family: "genkai-mincho";
+}
+
 .p-slider {
   width: 70vw;
+  margin-top: 80px;
 }
 
 .p-slider > img {
   height: 400px;
+}
+
+.p-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (23vw)[3];
+      grid-template-columns: repeat(3, 23vw);
+  -ms-grid-rows: (80px)[3];
+      grid-template-rows: repeat(3, 80px);
+  font-family: "genkai-mincho";
+  color: white;
+  margin-bottom: 80px;
+}
+
+.p-grid > li {
+  font-size: 20px;
+  background: url(/img/Black3.png) center/contain no-repeat;
+  width: 23vw;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
 }
 
 .p-frontside {

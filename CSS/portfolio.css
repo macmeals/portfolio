@@ -938,8 +938,13 @@ span {
   width: 70vw;
 }
 
-.p-workarticle > p {
+.p-workarticle__contents {
+  margin-bottom: 40px;
+}
+
+.p-workarticle__contents > p {
   font-family: "genkai-mincho";
+  margin: 15px 0 15px 0;
 }
 
 .p-slider {

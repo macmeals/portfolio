@@ -81,6 +81,14 @@
             display: none;
             
         }
+
+       
+    }
+
+    &__work {
+        margin-top: 80px;
+        @include centercontent;
+
     }
 
     &__text {
@@ -99,6 +107,17 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__other {
+        @include centercontent;
+        
+    }
+
+    &__othercontents {
+        @include centercontent;
+        
+    }
+
 }
 
 .p-frontservice {

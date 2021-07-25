@@ -504,7 +504,6 @@ span {
 
 .l-workheader {
   width: 100vw;
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -547,6 +546,27 @@ span {
   .l-frontfooter {
     display: none;
   }
+}
+
+.l-workfooter {
+  width: 100vw;
+  height: 100px;
+  background: url(/img/footer_tape.jpg) 90px/60px;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
 }
 
 .c-genkaifont {
@@ -650,6 +670,11 @@ span {
 .c-image__slick {
   width: 70vw;
   height: 500px;
+}
+
+.c-image__otherwork {
+  width: 50vw;
+  height: 300px;
 }
 
 .slick-dots > li > button::before {
@@ -825,6 +850,20 @@ span {
   display: none;
 }
 
+.p-pagination__work {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .p-pagination__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,6 +892,32 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.p-pagination__other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-pagination__othercontents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .p-frontservice {
@@ -1016,7 +1081,6 @@ span {
 
 .p-workheader__wrap {
   width: 70%;
-  background-color: blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

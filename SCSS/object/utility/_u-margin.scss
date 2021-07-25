@@ -1,23 +1,34 @@
-.u-margin__index {
-    margin-bottom: 40px;
-
-}
-
-.u-margin__asidetop {
-    margin-top: 20px;
-  
-    >li {
-        margin-top: 5px;
-       }
-
-}
-
-.u-margin__asidebottom {
-    margin-bottom: 20px;
-
-    >li {
-        margin-bottom: 5px;
+.u-margin {
+    &__index {
+        margin-bottom: 40px;
     }
-   
 
+    &__asidetop {
+        margin-top: 20px;
+      
+        >li {
+            margin-top: 5px;
+           }
+    }
+
+    &__asidebottom {
+        margin-bottom: 20px;
+    
+        >li {
+            margin-bottom: 5px;
+        }   
+    }
+
+    &__worktop {
+        margin-top: 20px;
+    }
 }
+
+
+
+
+
+
+
+
+

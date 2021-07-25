@@ -5,6 +5,6 @@
 }
 
 .l-workheader {
-    width: 80%;
-    display: flex;
+    width: 100vw;
+    @include centercontent;
 }

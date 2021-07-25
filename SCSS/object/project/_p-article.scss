@@ -81,6 +81,14 @@
             display: none;
             
         }
+
+       
+    }
+
+    &__work {
+        margin-top: 80px;
+        @include centercontent;
+
     }
 
     &__text {
@@ -99,6 +107,17 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__other {
+        @include centercontent;
+        
+    }
+
+    &__othercontents {
+        @include centercontent;
+        
+    }
+
 }
 
 .p-frontservice {
@@ -138,3 +157,46 @@
 
 }
 
+.p-workarticle {
+    width: 70vw;
+
+    &__contents {
+        margin-bottom: 40px;
+        >p {
+            font-family: "genkai-mincho";
+            margin: 15px 0 15px 0;
+        }
+
+    }
+
+    
+}
+
+.p-slider {
+    width: 70vw;
+    margin-top: 80px;
+
+    >img {
+        height: 400px;
+    }
+}
+
+.p-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 23vw);
+    grid-template-rows: repeat(3,80px);
+    font-family: "genkai-mincho";
+    color: white;
+    margin-bottom: 80px;
+    
+    > li { 
+           font-size: 20px;
+           background: url(/img/Black3.png) center/contain no-repeat ;
+           width: 23vw;
+           height: 80px;
+           line-height: 80px;
+           text-align: center;
+           
+            }
+                  
+}

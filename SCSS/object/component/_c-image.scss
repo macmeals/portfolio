@@ -36,5 +36,17 @@
       height: $pc-work_size;
     }
 
+    &__slick {
+      width: $pc-slick_width;
+      height: $pc-slick_height;
+    }
+    
+    &__otherwork {
+      width: $pc-work_width;
+      height: $pc-work_height;
+    }
+
+    
+
 }
 

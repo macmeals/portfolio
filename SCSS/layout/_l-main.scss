@@ -8,6 +8,10 @@
 
 .l-frontmain {
   display: flex;
+ 
+}
 
-  
+.l-workmain {
+  width: 100vw;
+  @include centercontent ;
 }

@@ -23,3 +23,9 @@
       
   }
 }
+
+.p-workside {
+    @include pc {
+        display: none;
+    }
+}

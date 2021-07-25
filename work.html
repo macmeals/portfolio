@@ -6,35 +6,44 @@
     <meta name="description" content="副業用の作品集サイトです">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOMO PORTFOLIO</title>
-    <link rel="stylesheet" href="./CSS/portfolio.css">
+    
     <!-- スライダー用のCSS -->
     <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
     <link rel="stylesheet" type="text/css" href="CSS/slick-theme.css"/>
+
+    <!-- 全体の用のCSS -->
+    <link rel="stylesheet" href="./CSS/portfolio.css">
 
     <!-- Pageネーション用のJQueryjとJs -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/paginathing.min.js"></script>
     <script type="text/javascript" src="js/image-pagenation.js"></script>
 
+    <!-- スライダー用のJQueryjとJs -->
+    <script type="text/javascript" src="js/image-slick.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
   </head>
-<body >
-    <header class ="l-workheader">
-        <div>
-           <img src="./img/DJ_CAT.png" alt="WorkPageのアイコン" class="c-image__cat">
-           <h2 class="c-againstfont__side"><span>T</span>omo's <span>S</span>ite</h2>
-        </div>
-        <div>
-            <div class="p-frontwork__top">
-                <img src="./img/record.png" alt="レコードの写真" class="c-image__record">
-                <a href="#" class ="c-sutitlefont"><span>W</span>ork</a>
-                <p>実績紹介</p>
+<body>
+    <header class ="l-workheader ">
+        <div class="p-workheader__wrap u-margin__worktop">
+            <div class="p-workheader__left">
+                <img src="./img/DJ_CAT.png" alt="WorkPageのアイコン" class="c-image__cat">
+                <h2 class="c-againstfont__side"><span>T</span>omo's <span>S</span>ite</h2>
             </div>
-            <div>
-                <a><span>H</span>OME</a>
-                <p>&lt;</p>
-                <a><span>W</span>ORK</a>
+            <div class="p-workheader__right">
+                <div class="p-workheader__title" >
+                    <img src="./img/record.png" alt="レコードの写真" class="c-image__record">
+                    <a href="#" class ="c-sutitlefont"><span>W</span>ork</a>
+                    <p class="c-genkaifont">実績紹介</p>
+                </div>
+                <div class="p-workheader__pankuzu ">
+                    <a><span>H</span>OME</a>
+                    <p>&lt;</p>
+                    <a><span>W</span>ORK</a>
+                </div>
             </div>
-        </div>
+        </div>    
     </header>
     <main class="l-workmain">
         
@@ -52,54 +61,62 @@
             </ul>
             <a href="#"><img src="./img/Twittersocialicons.png" alt="SiteOwnerのTwitterページのリンクです" class="c-image__twitter"></a>
         </aside>
-        <article>
-            <img src="./img/work1.jpg" alt="画像1枚目">
-            <img src="./img/work2.jpg" alt="画像2枚目">
-            <img src="./img/work3.jpg" alt="画像3枚目">
-            <img src="./img/work4.jpg" alt="画像4枚目">
-            <div>
-                <div>Webディレクション</div>
-                <div>Webデザイン</div>
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>JavaScript</div>
-                <div>PHP</div>
-                <div>WordPress</div>
+        <article class="p-workarticle">
+            <div class="p-slider ">
+                <img src="./img/work1.jpg" alt="画像1枚目" class="c-image__slick">
+                <img src="./img/work2.jpg" alt="画像2枚目" class="c-image__slick">
+                <img src="./img/work3.jpg" alt="画像3枚目" class="c-image__slick">
+                <img src="./img/work4.jpg" alt="画像4枚目" class="c-image__slick">
             </div>
-            <h3><span>T</span>itle</h3>
-            <p>(仮想サイト）<br>ハンバーガーサイト</p>
-            <h3><span>C</span>ontent</h3>
-            <p>仮想ファーストフードチェーン店のWEBサイトになります。Webデザインから行い、ワイヤーフレーム、デザインカンプを作成し、コーディング、サーバデプロイまで全ての行程を実施しました。</p>
-            <p>HTML、CSSで静的なサイトを作成した上で、JavaScriptで様々な機能も実施しました。その後WordPress化を行い、記事やブログの更新を簡単に行える様にしました。</p>
-            <p>PC、タブレット（iPad等）、スマートフォン（iPhone,Android)にも対応したレスポンシブ対応のサイトです。</p>
-            <p>制作期間はWEBデザイン（デザインカンプ作成まで）で約３週間、コーディングで約３週間、 WordPress化で１週間です。</p>
-            <h3><span>U</span>RL</h3>
-            <p>https://www.xxxx.co.jp/tests/test</p>
-            <div>
-                <h3><span>O</span>ther<span>W</span>ork</h3>
-                <div class="p-pagination">
-                  <dl class="p-pagination__text">
-                      <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__work></a></dt>
-                      <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト１</a></dd> 
-                  </dl>
-                  <dl class="p-pagination__text">
-                      <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__work></a></dt>
-                      <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト２</a></dd> 
-                  </dl>
-                  <dl class="p-pagination__text">
-                      <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__work></a></dt>
-                      <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト３</a></dd> 
-                  </dl>
-                  <dl class="p-pagination__text">
-                      <dt><a href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__work></a></dt>
-                      <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト４</a></dd> 
-                  </dl>
+            <ul class="p-grid" >
+                <li>Webディレクション</li>
+                <li>Webデザイン</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>WordPress</li>
+            </ul>
+            <div class="p-workarticle__contents">
+                <h3 class="c-againstfont__side"><span>T</span>itle</h3>
+                <p>(仮想サイト）<br>ハンバーガーサイト</p>
+            </div>
+            <div class="p-workarticle__contents">
+                <h3 class="c-againstfont__side"><span>C</span>ontent</h3>
+                <p>仮想ファーストフードチェーン店のWEBサイトになります。Webデザインから行い、ワイヤーフレーム、デザインカンプを作成し、コーディング、サーバデプロイまで全ての行程を実施しました。</p>
+                <p>HTML、CSSで静的なサイトを作成した上で、JavaScriptで様々な機能も実施しました。その後WordPress化を行い、記事やブログの更新を簡単に行える様にしました。</p>
+                <p>PC、タブレット（iPad等）、スマートフォン（iPhone,Android)にも対応したレスポンシブ対応のサイトです。</p>
+                <p>制作期間はWEBデザイン（デザインカンプ作成まで）で約３週間、コーディングで約３週間、 WordPress化で１週間です。</p>
+            </div>
+            <div class="p-workarticle__contents">
+                <h3 class="c-againstfont__side"><span>U</span>RL</h3>
+                <p>https://www.xxxx.co.jp/tests/test</p>
+            </div>
+            <div class = "p-pagination__work">
+                <h3 class="c-againstfont__sidemenu"><span>O</span>ther<span>W</span>ork</h3>
+                <div class="p-pagination__other">
+                    <dl class="p-pagination__othercontents">
+                        <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__otherwork></a></dt>
+                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト１</a></dd> 
+                    </dl>
+                    <dl>
+                        <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__otherwork></a></dt>
+                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト２</a></dd> 
+                    </dl>
+                    <dl>
+                        <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__otherwork></a></dt>
+                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト３</a></dd> 
+                    </dl>
+                    <dl>
+                        <dt><a href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__otherwork></a></dt>
+                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト４</a></dd> 
+                    </dl>
                </div>
             </div>   
         </article>
     </main>
     <footer class="l-workfooter">
-        <p><small>TOMO All right reserved</small></p>
+        <p class="c-genkaifont"><small>TOMO All right reserved</small></p>
     </footer>
   
 </body>

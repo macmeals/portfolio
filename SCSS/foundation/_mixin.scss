@@ -26,7 +26,7 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
 }
 
 
-//サブタイトルの並び順(h2タブを利用する前提）
+//サブタイトルの並び順
  @mixin subtitle ($subtitle_height){
      display: flex;
      align-items: center;

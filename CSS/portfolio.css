@@ -484,6 +484,10 @@ template {
   src: url("/fonts/thunder.woff2") format("woff2");
 }
 
+html {
+  line-height: 150%;
+}
+
 h1, h2, h3, ul, a {
   font-family: "my-against";
 }
@@ -569,8 +573,12 @@ span {
   color: white;
 }
 
-.c-genkaifont {
+.c-genkaifont, .c-genkaifont__contents {
   font-family: "genkai-mincho";
+}
+
+.c-genkaifont__contents {
+  font-size: 16px;
 }
 
 .c-thunderfont {
@@ -704,7 +712,7 @@ span {
 
 .p-index__animationtext {
   position: absolute;
-  top: 28vh;
+  top: 35vh;
 }
 
 .p-index__animationlink {
@@ -730,7 +738,6 @@ span {
       -ms-flex-align: center;
           align-items: center;
   font-family: "genkai-mincho";
-  line-height: 150%;
 }
 
 .p-frontarticle__wrap {
@@ -815,7 +822,7 @@ span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 0 0 50px;
+  margin: 30px 0 50px 0;
 }
 
 .p-pagination__class > .prev {
@@ -862,6 +869,10 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.p-pagination__work > h3 {
+  margin-bottom: 20px;
 }
 
 .p-pagination__text {
@@ -1009,7 +1020,7 @@ span {
 
 .p-workarticle__contents > p {
   font-family: "genkai-mincho";
-  margin: 15px 0 15px 0;
+  margin: 20px 0 20px 0;
 }
 
 .p-slider {

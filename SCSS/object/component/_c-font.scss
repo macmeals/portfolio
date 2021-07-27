@@ -1,5 +1,10 @@
 .c-genkaifont {
     font-family: "genkai-mincho";
+
+    &__contents {
+        @extend .c-genkaifont ;
+        font-size: 16px;
+    }
 }
 
 .c-thunderfont {

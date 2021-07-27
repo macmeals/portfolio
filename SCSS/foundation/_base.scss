@@ -16,6 +16,9 @@
   src: url("/fonts/thunder.woff2") format("woff2");
 }
 
+html {
+  line-height: 150%;
+}
 
 h1 ,h2, h3, ul ,a {
   font-family:"my-against";

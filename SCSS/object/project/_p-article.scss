@@ -161,7 +161,12 @@
 }
 
 .p-workarticle {
+    margin-top: 40px;
     width: 70vw;
+
+    &__subtitle {
+        @include subtitle (80px);
+    }
 
     &__contents {
         margin-bottom: 40px;

@@ -25,6 +25,7 @@
 }
 
 .p-workside {
+    height: 100vh;
     @include pc {
         display: none;
     }

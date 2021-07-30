@@ -32,9 +32,10 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
      align-items: center;
      height: $subtitle_height;
      
-     >a { margin: 0 40px 0 20px;
+     >a ,p { margin: 0 40px 0 20px;
      }
 
+     
  }
 
 //  コンテンツをセンターに寄せる為のMIXIN

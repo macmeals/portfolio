@@ -754,8 +754,13 @@ span {
   height: 115px;
 }
 
-.p-introduction__top > a, .p-introduction__top p {
+.p-introduction__top > a {
   margin: 0 40px 0 20px;
+}
+
+.p-introduction__top > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-introduction__content {
@@ -804,8 +809,13 @@ span {
   height: 115px;
 }
 
-.p-frontwork__top > a, .p-frontwork__top p {
+.p-frontwork__top > a {
   margin: 0 40px 0 20px;
+}
+
+.p-frontwork__top > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-pagination {
@@ -945,8 +955,13 @@ span {
   height: 115px;
 }
 
-.p-frontservice__top > a, .p-frontservice__top p {
+.p-frontservice__top > a {
   margin: 0 40px 0 20px;
+}
+
+.p-frontservice__top > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-frontservice > p {
@@ -968,8 +983,13 @@ span {
   margin-bottom: 10px;
 }
 
-.p-frontprice__top > a, .p-frontprice__top p {
+.p-frontprice__top > a {
   margin: 0 40px 0 20px;
+}
+
+.p-frontprice__top > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-frontblog {
@@ -987,8 +1007,13 @@ span {
   margin-bottom: 10px;
 }
 
-.p-frontblog__top > a, .p-frontblog__top p {
+.p-frontblog__top > a {
   margin: 0 40px 0 20px;
+}
+
+.p-frontblog__top > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-frontcontact {
@@ -1006,13 +1031,22 @@ span {
   margin-bottom: 10px;
 }
 
-.p-frontcontact__top > a, .p-frontcontact__top p {
+.p-frontcontact__top > a {
   margin: 0 40px 0 20px;
+}
+
+.p-frontcontact__top > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-workarticle {
   margin-top: 40px;
   width: 70vw;
+}
+
+.p-workarticle > p {
+  font-family: "genkai-mincho";
 }
 
 .p-workarticle__subtitle {
@@ -1025,8 +1059,13 @@ span {
   height: 80px;
 }
 
-.p-workarticle__subtitle > a, .p-workarticle__subtitle p {
+.p-workarticle__subtitle > a {
   margin: 0 40px 0 20px;
+}
+
+.p-workarticle__subtitle > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-workarticle__contents {
@@ -1140,8 +1179,13 @@ span {
   height: 150px;
 }
 
-.p-workheader__title > a, .p-workheader__title p {
+.p-workheader__title > a {
   margin: 0 40px 0 20px;
+}
+
+.p-workheader__title > p {
+  margin: 0 40px 0 20px;
+  font-family: "genkai-mincho";
 }
 
 .p-workheader__pankuzu {
@@ -1180,5 +1224,9 @@ span {
 
 .u-margin__worktop {
   margin-top: 20px;
+}
+
+.u-margin__pricetop {
+  margin-top: 80px;
 }
 /*# sourceMappingURL=portfolio.css.map */

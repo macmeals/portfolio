@@ -164,6 +164,10 @@
     margin-top: 40px;
     width: 70vw;
 
+    >p {
+        font-family: "genkai-mincho";
+    }
+
     &__subtitle {
         @include subtitle (80px);
     }

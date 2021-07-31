@@ -32,9 +32,12 @@ $smartphone:699px;  /* スマホはWidthが700pxより小さい */
      align-items: center;
      height: $subtitle_height;
      
-     >a ,p { margin: 0 40px 0 20px;
+     >a  { margin: 0 40px 0 20px;
      }
 
+     >p  { margin: 0 40px 0 20px;
+           font-family: "genkai-mincho";
+     }
      
  }
 

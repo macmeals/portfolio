@@ -173,7 +173,8 @@
     }
 
     &__contents {
-        margin-bottom: 40px;
+        
+        margin: 80px 0 80px 0;
         >p {
             font-family: "genkai-mincho";
             margin: 20px 0 20px 0;
@@ -182,6 +183,12 @@
     }
 
     
+}
+
+.p-blogarticle {
+    &__date {
+        text-align: right;
+    }
 }
 
 .p-slider {

@@ -1069,12 +1069,16 @@ span {
 }
 
 .p-workarticle__contents {
-  margin-bottom: 40px;
+  margin: 80px 0 80px 0;
 }
 
 .p-workarticle__contents > p {
   font-family: "genkai-mincho";
   margin: 20px 0 20px 0;
+}
+
+.p-blogarticle__date {
+  text-align: right;
 }
 
 .p-slider {
@@ -1227,6 +1231,10 @@ span {
 }
 
 .u-margin__pricetop {
+  margin-top: 80px;
+}
+
+.u-margin__blogtop {
   margin-top: 80px;
 }
 /*# sourceMappingURL=portfolio.css.map */

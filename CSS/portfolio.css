@@ -500,6 +500,10 @@ span {
   color: red;
 }
 
+form {
+  font-family: "genkai-mincho";
+}
+
 @media (min-width: 1201px) {
   .l-frontheader {
     display: none;
@@ -1109,6 +1113,59 @@ span {
   height: 80px;
   line-height: 80px;
   text-align: center;
+}
+
+.p-form {
+  width: 70vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-form__contents {
+  display: block;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-form__label {
+  display: block;
+  width: 15vw;
+}
+
+.p-form__input {
+  display: block;
+  width: 50vw;
+  background-color: #F4F0F0;
+  border: 1px solid #707070;
+}
+
+.p-form__textarea {
+  width: 50vw;
+  background-color: #F4F0F0;
+  border: 1px solid  #707070;
+  height: 120px;
+}
+
+.p-form__submit {
+  background: url(/img/Black3.png) center/contain no-repeat;
+  color: white;
+}
+
+.p-form__submit > input {
+  width: 20vw;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
 }
 
 .p-frontside {

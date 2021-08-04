@@ -219,3 +219,58 @@
             }
                   
 }
+
+.p-form {
+    width: 70vw;
+    @include centercontent ;
+
+    &__contents{
+                
+                display: block;
+                margin-top: 20px;
+                display: flex;
+                
+                
+    }
+   
+
+    &__label { display: block;
+               width: 15vw;
+               
+    }
+
+    &__input {
+        display: block;
+        width: 50vw;
+        background-color: #F4F0F0;
+        border: 1px solid #707070;
+        
+    }
+
+    &__textarea {
+        width: 50vw;
+        background-color: #F4F0F0;
+        border: 1px solid  #707070;
+        // 1行16pxで5行 line-height が150%
+        height: 120px;
+        
+    }
+
+    &__submit {
+        background: url(/img/Black3.png) center/contain no-repeat ;
+        color: white;
+
+        >input {
+            width: 20vw;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+        }
+        
+
+       
+    }
+
+
+
+}

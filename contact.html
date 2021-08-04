@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="副業用の作品集サイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMO PORTFOLIO</title>
+
+    <!-- 全体の用のCSS -->
+    <link rel="stylesheet" href="./CSS/portfolio.css">
+
+  </head>
+<body>
+    <header class ="l-workheader">
+        <div class="p-workheader__wrap u-margin__worktop">
+            <div class="p-workheader__left">
+                <img src="./img/DJ_CAT.png" alt="WorkPageのアイコン" class="c-image__cat">
+                <h2 class="c-againstfont__side"><span>T</span>omo's <span>S</span>ite</h2>
+            </div>
+            <div class="p-workheader__right">
+                <div class="p-workheader__title" >
+                    <img src="./img/record.png" alt="レコードの写真" class="c-image__record">
+                    <a href="#" class ="c-sutitlefont"><span>C</span>ontact</a>
+                    <p class="c-genkaifont">お問い合わせ</p>
+                </div>
+                <div class="p-workheader__pankuzu ">
+                    <a href="/frontpage.html"><span>H</span>OME</a>
+                    <p>&lt;</p>
+                    <a><span>C</span>ONTACT</a>
+                </div>
+            </div>
+        </div>    
+    </header>
+    <main class="l-workmain">
+        <aside class="p-workside">
+            <button>Return</button>
+            <img src="./img/skull.png" alt="サイドバーのシンボルの髑髏です" class="c-image__skull u-margin__asidetop">
+            <p class="c-againstfont__sidemenu"><span>C</span>ontent</p>
+            <ul class="c-againstfont__sidelink u-margin__asidetop u-margin__asidebottom">
+                <li><a href="#siteowner"><span>S</span>iteOwner</a></li>
+                <li><a href="#work"><span>W</span>ork</a></li>
+                <li><a href="#service"><span>S</span>ervice</a></li>
+                <li><a href="#price"><span>P</span>rice</a></li>
+                <li><a href="#blog"><span>B</span>log</a></li>
+                <li><a href="#contact"><span>C</span>ontact</a></li>
+            </ul>
+            <a href="#"><img src="./img/Twittersocialicons.png" alt="SiteOwnerのTwitterページのリンクです" class="c-image__twitter"></a>
+        </aside>
+        <article class="p-workarticle">
+            <div class="p-workarticle__contents">
+                <p>お問い合わせありがとうございます。お問い合わせ頂いたメールアドレス宛に２４時間以内に回答させて頂きます。もし御連絡がない場合、こちらに御連絡が届いていない可能性がありますので、お手数ですが、再度こちらからお問い合わせ下さい。</p>
+            </div>
+            <form class = "p-form" action="#" method="post">
+                <div class="p-form__contents">
+                    <label class="p-form__label" for="name">名前</label>
+                    <input class="p-form__input" type="text" id="name" name="name">
+                </div>
+                <div class="p-form__contents">
+                    <label class="p-form__label" for="email">メールアドレス</label>
+                    <input class="p-form__input" type="mail" id="email" name="email">
+                </div>
+                <div class="p-form__contents">
+                    <label class="p-form__label" for="message">お問い合わせ内容</label>
+                    <textarea class="p-form__textarea" id="message" name="message"></textarea>
+                </div>
+                <div  class="p-form__submit" >
+                    <input type="submit" value="送信する">
+                </div>
+            </form>
+            
+            
+        </article>
+    </main>
+    <footer class="l-workfooter">
+        <p class="c-genkaifont"><small>TOMO All right reserved</small></p>
+    </footer>
+  
+</body>
+</html>

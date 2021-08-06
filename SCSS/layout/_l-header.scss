@@ -2,6 +2,14 @@
     @include pc {
         display: none;
     }
+
+    @include tablet {
+        display: block;
+        width: 100vw;
+        height: 250px;
+        background-image: url(/img/gradation_background.jpg);
+        
+    }
 }
 
 .l-workheader {

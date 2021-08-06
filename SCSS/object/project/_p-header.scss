@@ -1,3 +1,34 @@
+.p-frontheader {
+    position: relative;
+
+    &__twitter {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+    }
+
+    &__title {
+        height: 250px;
+        @include centercontent ;
+        justify-content: center;
+       
+        >a {
+            font-size: 50px;
+        }
+
+    }
+}    
+
+.p-hamberger {
+    position: absolute;
+    left: 90vw;
+    top: 50px;
+    font-size: 30px;
+    font-family: "my-against";
+}   
+
+
+// work,service,blogのヘッダー
 .p-workheader {
     &__wrap {
         width: 70%;

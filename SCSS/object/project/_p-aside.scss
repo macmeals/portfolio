@@ -3,7 +3,11 @@
    background-size :cover;
    width: 20vw;
 
-  
+    @include tablet {
+        position: absolute;
+        left: 100%;
+    }
+    
   &__fix {
       position: fixed;
       width: 20vw;
@@ -11,6 +15,20 @@
       flex-direction: column;
       align-items: center;
      }
+
+  &__cat {
+      @include tablet {
+          display: none;
+      }    
+  }
+
+  &__subtitle {
+      @include tablet {
+          display: none;
+      }
+  }
+
+
   
   >p {
       font-size: 50px;

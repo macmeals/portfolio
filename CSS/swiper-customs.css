@@ -1,0 +1,26 @@
+.swiper-button-prev, .swiper-button-next {
+  top: 85%;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-family: "my-against";
+}
+
+.swiper-button-prev::before, .swiper-button-next::before {
+  position: absolute;
+  top: 90%;
+  content: "Ene";
+  color: red;
+  font-family: "my-thunder";
+}
+
+.swiper-button-prev::before, .swiper-button-prev::after {
+  position: absolute;
+  left: 20%;
+}
+
+.swiper-button-next::before, .swiper-button-next::after {
+  position: absolute;
+  right: 20%;
+}
+/*# sourceMappingURL=swiper-customs.css.map */

@@ -6,7 +6,7 @@
             <meta name="description" content="副業用の作品集サイトです">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>TOMO PORTFOLIO</title>
-            <link rel="stylesheet" href="./CSS/portfolio.css">
+            
             <!-- スライダー用のCSS -->
             <!-- <link rel="stylesheet" type="text/css" href="CSS/slick.css"/>
             <link rel="stylesheet" type="text/css" href="CSS/slick-theme.css"/> -->
@@ -15,10 +15,12 @@
             <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <script type="text/javascript" src="js/paginathing.min.js"></script>
             <script type="text/javascript" src="js/image-pagenation.js"></script>
-
+            <!-- fontpage全体のCSS読み込み -->
+            <link rel="stylesheet" href="./CSS/portfolio.css">
             <!-- SwiperのCSS読み込み -->
             <link rel="stylesheet" href="./CSS/swiper-bundle.min.css">
-
+            <!-- Swiperの個別カスタムのCSS読み込み -->
+            <link rel="stylesheet" href="./CSS/swiper-customs.css">
 
         </head>
         <body>
@@ -78,24 +80,31 @@
                                 <a href="/work.html" class ="c-sutitlefont"><span>W</span>ork</a>
                                 <p>実績紹介</p>
                             </div>
-                            <div class="p-pagination">
-                                <dl class="p-pagination__text">
-                                    <dt><a href="/work.html"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__work></a></dt>
-                                    <dd><a class="c-genkaifont" href="/work.html">（仮想サイト）</br>ハンバーガーサイト１</a></dd> 
-                                </dl>
-                                <dl class="p-pagination__text">
-                                    <dt><a href="/work.html"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__work></a></dt>
-                                    <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト２</a></dd> 
-                                </dl>
-                                <dl class="p-pagination__text">
-                                    <dt><a href="/work.html"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__work></a></dt>
-                                    <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト３</a></dd> 
-                                </dl>
-                                <dl class="p-pagination__text">
-                                    <dt><a href="/work.html"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__work></a></dt>
-                                    <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト４</a></dd> 
-                                </dl>
+
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <dl class="swiper-slide">
+                                        <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚目です。" class="c-image__work"></a></dt> 
+                                        <dd><a href="#" class="c-genkaifont">仮想ハンバーガーサイト１</a></dd>
+                                    </dl>
+                                    <dl class="swiper-slide">
+                                        <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚目です。" class="c-image__work"></a></dt>
+                                        <dd><a href="#" class="c-genkaifont">仮想ハンバーガーサイト２</a></dd>
+                                    </dl>
+                                    <dl class="swiper-slide">
+                                        <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚目です。" class="c-image__work"></a></dt>
+                                        <dd><a href="#" class="c-genkaifont">仮想ハンバーガーサイト３</a></dd>
+                                    </dl>
+                                    <dl class="swiper-slide">
+                                        <dt><a href="#"><img src="./img/work4.jpg" alt="画像4枚目です。" class="c-image__work"></a></dt>
+                                        <dd><a href="#" class="c-genkaifont">仮想ハンバーガーサイト4</a></dd>
+                                    </dl>
+                                  
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
+                            
                         </div>
                         <div class="p-frontservice" id="service">
                             <div class="p-frontservice__top">
@@ -175,10 +184,23 @@
 
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./img/work1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/work2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/work3.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./img/work4.jpg" alt=""></div>
+                    <dl class="swiper-slide">
+                        <dt><a><img src="./img/work1.jpg" alt=""></a></dt>
+                        <dd>テキストテキストテキスト</dd>
+                    </dl>
+                    <dl class="swiper-slide">
+                        <dt><a><img src="./img/work2.jpg" alt=""></a></dt>
+                        <dd>テキストテキストテキスト</dd>
+                    </dl>
+                    <dl class="swiper-slide">
+                        <dt><a><img src="./img/work3.jpg" alt=""></a></dt>
+                        <dd>テキストテキストテキスト</dd>
+                    </dl>
+                    <dl class="swiper-slide">
+                        <dt><a href="#"><img src="./img/work4.jpg" alt=""></a></dt>
+                        <dd><a href="#">テキストテキストテキスト</a></dd>
+                    </dl>
+                  
                 </div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>

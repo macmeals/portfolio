@@ -587,12 +587,16 @@ form {
   color: white;
 }
 
-.c-genkaifont, .c-genkaifont__contents {
+.c-genkaifont, .c-genkaifont__contents, .c-genkaifont__black {
   font-family: "genkai-mincho";
 }
 
 .c-genkaifont__contents {
   font-size: 16px;
+}
+
+.c-genkaifont__black {
+  color: black;
 }
 
 .c-thunderfont {
@@ -1190,7 +1194,7 @@ form {
 
 .swiper-container {
   width: 75vw;
-  height: 350px;
+  height: 400px;
   position: relative;
 }
 

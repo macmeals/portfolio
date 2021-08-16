@@ -4,6 +4,7 @@
 
 .swiper-button-prev::after, .swiper-button-next::after {
   font-family: "my-against";
+  color: black;
 }
 
 .swiper-button-prev::before, .swiper-button-next::before {
@@ -12,6 +13,7 @@
   content: "Ene";
   color: red;
   font-family: "my-thunder";
+  font-size: 25px;
 }
 
 .swiper-button-prev::before, .swiper-button-prev::after {

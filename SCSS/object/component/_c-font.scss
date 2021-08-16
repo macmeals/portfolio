@@ -5,6 +5,11 @@
         @extend .c-genkaifont ;
         font-size: 16px;
     }
+    &__black {
+        @extend .c-genkaifont ;
+        color: black;
+    }
+    
 }
 
 .c-thunderfont {

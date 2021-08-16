@@ -3,6 +3,7 @@
   top: 85%;
   &::after {
     font-family:"my-against";
+    color: black;
     
   }
 
@@ -12,6 +13,7 @@
     content: "Ene";
     color: red; 
     font-family: "my-thunder";
+    font-size: 25px;
   }
 }
 

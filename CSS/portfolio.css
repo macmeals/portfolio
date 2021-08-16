@@ -1224,6 +1224,11 @@ form {
   }
 }
 
+.p-frontside.is_open {
+  position: absolute;
+  left: 0%;
+}
+
 .p-frontside__fix {
   position: fixed;
   width: 20vw;
@@ -1237,6 +1242,12 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .p-frontside__fix {
+    width: 100vw;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -1,6 +1,8 @@
 .p-frontheader {
+    background: url(/img/gradation_background.jpg) top/cover;
     position: relative;
-
+    height: 250px;
+    
     &__twitter {
         position: absolute;
         top: 150px;
@@ -17,6 +19,13 @@
         }
 
     }
+
+    // ハンバーガーメニューが表示されたら、ヘッダーを表示を消す 
+    &.is-open {
+        display:none ;
+    }
+
+   
 }    
 
 .p-hamberger {
@@ -26,6 +35,22 @@
     font-size: 30px;
     font-family: "my-against";
 }   
+
+.p-hambergermanu {
+    // overflow-x: hidden;
+    position: absolute;
+    left: 100%;
+    font-family:"my-against";
+    font-size: 50px;
+
+    &.is-open {
+        top:50%;
+        left: calc(50% - 50px) ;
+        transition: all 2s;
+        
+        
+    } 
+}
 
 
 // work,service,blogのヘッダー

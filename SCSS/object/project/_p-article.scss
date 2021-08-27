@@ -1,34 +1,62 @@
 .p-frontarticle {
-    width: 80vw ;
+    width: 80vw ; /* PCの長さ  */
     @include centercontent ;
     font-family: "genkai-mincho";
 
+    @include tablet {
+        width: 100vw;
+    }
+
     &__wrap {
         width: 75vw;
-        
 
+        @include tablet {
+            width: 90vw;
+        }
     }
 
 }
 
 .p-introduction {
+    
     &__top {
         @include subtitle(115px);
+        @include smartphone {
+            flex-direction: column;
+            > a {
+                margin: 20px 0 10px 0;
+            }
+            > p {
+                margin: 0;
+            }
+
+        }
     }
 
     &__content {
         display: flex;
+        @include smartphone {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__left {
         width:$pc-owner_size ;
         @include centercontent ;
+        
     }
 
     &__right {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        @include smartphone {
+            margin-top: 20px;
+            >p {
+                margin-bottom: 16px;
+            }
+        }
         
     }
 
@@ -37,96 +65,35 @@
 .p-frontwork {
     margin-top: 100px;
     &__top {
-        @include subtitle(115px);    
+        @include subtitle(115px);  
+        @include smartphone {
+            flex-direction: column;
+            > a {
+                margin: 20px 0 10px 0;
+            }
+            > p {
+                margin: 0;
+            }
+
+        }
     }
 }
 
-.p-pagination {
-   display: flex;
-
-    &__class {
-        width: 775px ;
-        display: flex;
-        justify-content: space-between;
-        margin: 30px 0 50px 0;
-
-        >.prev {
-            position: relative;
-            > a::after {
-                position: absolute;
-                content: "Ene";
-                color: red;
-                top: 15px;
-                left: 5px;
-                font-family: "my-thunder";
-                font-size: 25px;
-            }
-            
-        }
-        >.next {
-            position: relative;
-            > a::after {
-                position: absolute;
-                content: "Ene";
-                color: red;
-                top: 15px;
-                right: 5px;
-                font-family: "my-thunder";
-                font-size: 25px;
-            }
-        }
-         
-        >.page {
-            display: none;
-            
-        }
-
-       
-    }
-
-    &__work {
-        margin-top: 80px;
-        @include centercontent;
-
-        >h3 {
-            margin-bottom: 20px;
-        }
-
-    }
-
-    &__text {
-        @include centercontent ;
-
-        >dt {
-            margin-left: 50px;
-        }
-        >dd {
-            margin-left: 50px;
-        }
-       
-    }
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__other {
-        @include centercontent;
-        
-    }
-
-    &__othercontents {
-        @include centercontent;
-        
-    }
-
-}
 
 .p-frontservice {
     margin-top: 100px;
     &__top {
-        @include subtitle(115px);    
+        @include subtitle(115px); 
+        @include smartphone {
+            flex-direction: column;
+            > a {
+                margin: 20px 0 10px 0;
+            }
+            > p {
+                margin: 0;
+            }
+
+        }   
     }
 
     >p {
@@ -138,7 +105,17 @@
     margin-top: 100px;
     &__top {
         @include subtitle(115px); 
-        margin-bottom: 10px;   
+        margin-bottom: 10px;  
+        @include smartphone {
+            flex-direction: column;
+            > a {
+                margin: 20px 0 10px 0;
+            }
+            > p {
+                margin: 0;
+            }
+
+        } 
     }
 
 }
@@ -148,6 +125,9 @@
     &__top {
         @include subtitle(115px); 
         margin-bottom: 10px;   
+        @include smartphone {
+            flex-direction: column;
+        }
     }
 }
 
@@ -155,7 +135,17 @@
     margin: 100px 0 100px 0;
     &__top {
         @include subtitle(115px); 
-        margin-bottom: 10px;   
+        margin-bottom: 10px;
+        @include smartphone {
+            flex-direction: column;
+            > a {
+                margin: 20px 0 10px 0;
+            }
+            > p {
+                margin: 0;
+            }
+
+        }   
     }
 
 }
@@ -266,11 +256,20 @@
             height: 80px;
             line-height: 80px;
         }
-        
-
        
     }
 
-
-
 }
+
+.swiper-container{
+    width: 75vw;
+    height: 400px;
+    position: relative;
+    z-index: 10;
+ }
+
+ .swiper-slide { 
+    @include centercontent;
+ }
+
+ 

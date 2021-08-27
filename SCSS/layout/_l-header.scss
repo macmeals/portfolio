@@ -1,6 +1,17 @@
 .l-frontheader {
+    overflow-x: hidden;
+    z-index: 100;
+
     @include pc {
         display: none;
+    }
+
+    @include tablet {
+        display: block;
+        width: 100vw;
+        height: 250px;
+        position: relative;
+        
     }
 }
 

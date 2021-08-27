@@ -1,16 +1,57 @@
 .p-frontside {
-   background-image: url(/img/gradation_background.jpg);
-   background-size :cover;
+   background: url(/img/gradation_background.jpg) top/cover;
    width: 20vw;
 
+
+    @include tablet {
+        position: absolute;
+        width: 100vw;
+        left: 100%;
+        height: 100%;
+        background: none;
+    }
+
   
+  &.is-open {
+    @include tablet {
+        transition: all 2s;
+        position: absolute;
+        left: 0%;
+        z-index: 100;
+    }
+
+  }
+    
   &__fix {
       position: fixed;
       width: 20vw;
       display: flex;
       flex-direction: column;
       align-items: center;
+      
+
+      @include tablet {
+          position: static;
+          width: 100vw;
+          height: 100%;
+          
+      }
+      
      }
+
+  &__cat {
+      @include tablet {
+          display: none;
+      }    
+  }
+
+  &__subtitle {
+      @include tablet {
+          display: none;
+      }
+  }
+
+
   
   >p {
       font-size: 50px;

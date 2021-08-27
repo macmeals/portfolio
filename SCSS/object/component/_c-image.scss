@@ -23,6 +23,10 @@
     &__record {
       width: $pc-record_size;
       height: $pc-record_size;
+        @include smartphone {
+            width: $smart-record_size;
+            height: $smart-record_size; 
+        }
     }
 
     &__owner {

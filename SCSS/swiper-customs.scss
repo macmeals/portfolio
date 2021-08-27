@@ -1,0 +1,33 @@
+// ページネーションの「PREV」「NEXT」の位置を調整
+.swiper-button-prev, .swiper-button-next {
+  top: 85%;
+  &::after {
+    font-family:"my-against";
+    color: black;
+    
+  }
+
+  &::before {
+    position: absolute;
+    top: 90%;
+    content: "Ene";
+    color: red; 
+    font-family: "my-thunder";
+    font-size: 25px;
+  }
+}
+
+.swiper-button-prev {
+    &::before,&::after {
+      position: absolute;
+      left: 20%;
+    } 
+}
+
+.swiper-button-next {
+    &::before,&::after {
+      position: absolute;
+      right: 20%;
+    } 
+}
+   

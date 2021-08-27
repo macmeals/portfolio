@@ -5,6 +5,11 @@
         @extend .c-genkaifont ;
         font-size: 16px;
     }
+    &__black {
+        @extend .c-genkaifont ;
+        color: black;
+    }
+    
 }
 
 .c-thunderfont {
@@ -36,6 +41,9 @@
 
 .c-sutitlefont { 
     font-size: 100px;
+        @include smartphone {
+            font-size: 50px;
+        }
 }
 
 .c-redunderline {

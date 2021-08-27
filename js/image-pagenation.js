@@ -1,3 +1,4 @@
+
 $(function() {
 	$('.p-pagination').paginathing({//親要素のclassを記述
 		firstLast :false,
@@ -19,9 +20,5 @@ $(function() {
 	
 	})
 
-
-
-
-
-
 });
+

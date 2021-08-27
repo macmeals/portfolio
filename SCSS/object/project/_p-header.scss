@@ -5,8 +5,8 @@
     
     &__twitter {
         position: absolute;
-        top: 150px;
-        left: 150px;
+        top: 180px;
+        left: 10vw;
     }
 
     &__title {
@@ -34,6 +34,9 @@
     top: 50px;
     font-size: 30px;
     font-family: "my-against";
+    @include smartphone {
+        left: 80vw;
+    }
 }   
 
 .p-hambergermanu {

@@ -41,6 +41,9 @@
 
 .c-sutitlefont { 
     font-size: 100px;
+        @include smartphone {
+            font-size: 50px;
+        }
 }
 
 .c-redunderline {

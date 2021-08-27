@@ -2,6 +2,15 @@
     @include pc {
         display: none;
     }
+    @include tablet {
+        width: 100vw;
+        height: 100px;
+        background: url(/img/footer_tape.jpg) 90px/60px;
+        margin-top: 80px ;
+        @include centercontent;
+        justify-content: center;
+        color: white;
+    }
 }
 
 .l-workfooter {

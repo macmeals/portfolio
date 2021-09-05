@@ -13,23 +13,24 @@
 
     <!-- 全体の用のCSS -->
     <link rel="stylesheet" href="./CSS/portfolio.css">
+    <!-- SwiperのCSS読み込み -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css">
+    <!-- Swiperの個別カスタムのCSS読み込み -->
+    <link rel="stylesheet" href="./CSS/swiper-customs.css">
 
-    <!-- Pageネーション用のJQueryjとJs -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/paginathing.min.js"></script>
-    <script type="text/javascript" src="js/image-pagenation.js"></script>
-
-    <!-- スライダー用のJQueryjとJs -->
-    <script type="text/javascript" src="js/image-slick.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+   
 
   </head>
-<body>
-    <header class ="l-workheader ">
-        <div class="p-workheader__wrap u-margin__worktop">
+<body class="l-body">
+    <header class ="l-workheader">
+        <div class="p-workheader__wrap u-margin__slicktop">
             <div class="p-workheader__left">
                 <img src="./img/DJ_CAT.png" alt="WorkPageのアイコン" class="c-image__cat">
                 <h2 class="c-againstfont__side"><span>T</span>omo's <span>S</span>ite</h2>
+            </div>
+            <button class="p-hamberger"><span>M</span>enu</button>
+            <div class="p-hambergermanu">
+                <button><span>R</span>eturn</button>
             </div>
             <div class="p-workheader__right">
                 <div class="p-workheader__title" >
@@ -47,7 +48,6 @@
     </header>
     <main class="l-workmain">
         <aside class="p-workside">
-            <button>Return</button>
             <img src="./img/skull.png" alt="サイドバーのシンボルの髑髏です" class="c-image__skull u-margin__asidetop">
             <p class="c-againstfont__sidemenu"><span>C</span>ontent</p>
             <ul class="c-againstfont__sidelink u-margin__asidetop u-margin__asidebottom">
@@ -61,11 +61,14 @@
             <a href="#"><img src="./img/Twittersocialicons.png" alt="SiteOwnerのTwitterページのリンクです" class="c-image__twitter"></a>
         </aside>
         <article class="p-workarticle">
-            <div class="p-slider ">
-                <img src="./img/work1.jpg" alt="画像1枚目" class="c-image__slick">
-                <img src="./img/work2.jpg" alt="画像2枚目" class="c-image__slick">
-                <img src="./img/work3.jpg" alt="画像3枚目" class="c-image__slick">
-                <img src="./img/work4.jpg" alt="画像4枚目" class="c-image__slick">
+            <div class="swiper-container swiper1">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img class="c-image__slick" src="./img/work1.jpg" alt="画像1枚目" ></li>
+                    <li class="swiper-slide"><img class="c-image__slick" src="./img/work2.jpg" alt="画像2枚目" ></li>
+                    <li class="swiper-slide"><img class="c-image__slick" src="./img/work3.jpg" alt="画像3枚目" ></li>
+                    <li class="swiper-slide"><img class="c-image__slick" src="./img/work4.jpg" alt="画像4枚目" ></li>
+                </ul>
+                <div class="swiper-pagination"></div>   
             </div>
             <ul class="p-grid" >
                 <li>Webディレクション</li>
@@ -91,32 +94,44 @@
                 <h3 class="c-againstfont__side"><span>U</span>RL</h3>
                 <p>https://www.xxxx.co.jp/tests/test</p>
             </div>
-            <div class = "p-pagination__work">
+            <div class = "p-workarticle__swiper">
                 <h3 class="c-againstfont__sidemenu"><span>O</span>ther<span>W</span>ork</h3>
-                <div class="p-pagination__other">
-                    <dl class="p-pagination__othercontents">
-                        <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__otherwork></a></dt>
-                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト１</a></dd> 
-                    </dl>
-                    <dl class="p-pagination__othercontents">
-                        <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__otherwork></a></dt>
-                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト２</a></dd> 
-                    </dl>
-                    <dl class="p-pagination__othercontents">
-                        <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__otherwork></a></dt>
-                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト３</a></dd> 
-                    </dl>
-                    <dl class="p-pagination__othercontents">
-                        <dt><a href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__otherwork></a></dt>
-                        <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト４</a></dd> 
-                    </dl>
-               </div>
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <dl class="swiper-slide">
+                            <dt><a href="#"><img src="./img/work1.jpg" alt="画像1枚めです" class=c-image__otherwork></a></dt>
+                            <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト１</a></dd> 
+                        </dl>
+                        <dl class="swiper-slide">
+                            <dt><a href="#"><img src="./img/work2.jpg" alt="画像2枚めです" class=c-image__otherwork></a></dt>
+                            <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト2</a></dd> 
+                        </dl>
+                        <dl class="swiper-slide">
+                            <dt><a href="#"><img src="./img/work3.jpg" alt="画像3枚めです" class=c-image__otherwork></a></dt>
+                            <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト3</a></dd> 
+                        </dl>
+                        <dl class="swiper-slide">
+                            <dt><a href="#"><img src="./img/work4.jpg" alt="画像4枚めです" class=c-image__otherwork></a></dt>
+                            <dd><a class="c-genkaifont" href="#">（仮想サイト）</br>ハンバーガーサイト4</a></dd> 
+                        </dl>
+                    </div>
+                    <div class="swiper-pagination"></div>   
+                </div>
+  
             </div>   
         </article>
     </main>
+    <!-- ハンバーガーメニューを開く時の背景を指定 -->
+    <div class="c-hambergerbackground"></div>
+
     <footer class="l-workfooter">
         <p class="c-genkaifont"><small>TOMO All right reserved</small></p>
     </footer>
-  
+    <!-- ハンバーガーメニューのJS読み込み -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/hamberger.js"></script>
+    <!-- swiperのJSの読み込み -->
+    <script src="./js/swiper-bundle-min.js"></script>
+    <script src="js/swiper1.js"></script>
 </body>
 </html>

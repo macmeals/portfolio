@@ -525,6 +525,7 @@ form {
 }
 
 .l-workheader {
+  z-index: 100;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -742,7 +743,7 @@ form {
 
 .c-image__slick {
   width: 70vw;
-  height: 500px;
+  height: 450px;
 }
 
 .c-image__otherwork {
@@ -1151,17 +1152,26 @@ form {
   margin: 20px 0 20px 0;
 }
 
+.p-workarticle__swiper {
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-workarticle__swiper > h3 {
+  margin-bottom: 30px;
+}
+
 .p-blogarticle__date {
   text-align: right;
-}
-
-.p-slider {
-  width: 70vw;
-  margin-top: 80px;
-}
-
-.p-slider > img {
-  height: 400px;
 }
 
 .p-grid {
@@ -1174,6 +1184,17 @@ form {
   font-family: "genkai-mincho";
   color: white;
   margin-bottom: 80px;
+  background-color: green;
+}
+
+@media (max-width: 1200px) {
+  .p-grid {
+    -ms-grid-columns: (23vw)[2];
+        grid-template-columns: repeat(2, 23vw);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .p-grid > li {
@@ -1243,6 +1264,11 @@ form {
   height: 400px;
   position: relative;
   z-index: 10;
+}
+
+.swiper-container.swiper1 {
+  width: 70vw;
+  height: 500px;
 }
 
 .swiper-slide {
@@ -1383,6 +1409,12 @@ form {
   font-family: "my-against";
 }
 
+@media (min-width: 1201px) {
+  .p-hamberger {
+    display: none;
+  }
+}
+
 @media (max-width: 699px) {
   .p-hamberger {
     left: 80vw;
@@ -1394,6 +1426,12 @@ form {
   left: 100%;
   font-family: "my-against";
   font-size: 50px;
+}
+
+@media (min-width: 1201px) {
+  .p-hambergermanu {
+    display: none;
+  }
 }
 
 .p-hambergermanu.is-open {
@@ -1410,6 +1448,24 @@ form {
   display: flex;
 }
 
+@media (max-width: 1200px) {
+  .p-workheader__wrap {
+    width: 100vw;
+    height: 250px;
+    background: url(/img/gradation_background.jpg) top/cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .p-workheader__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1422,6 +1478,18 @@ form {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 80px;
+}
+
+@media (max-width: 1200px) {
+  .p-workheader__left {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .p-workheader__right {
+    display: none;
+  }
 }
 
 .p-workheader__title {

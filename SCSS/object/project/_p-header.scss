@@ -29,6 +29,9 @@
 }    
 
 .p-hamberger {
+    @include pc {
+        display: none;
+    }
     position: absolute;
     left: 90vw;
     top: 50px;
@@ -40,7 +43,9 @@
 }   
 
 .p-hambergermanu {
-    // overflow-x: hidden;
+    @include pc {
+        display: none;
+    }
     position: absolute;
     left: 100%;
     font-family:"my-against";
@@ -61,11 +66,26 @@
     &__wrap {
         width: 70%;
         display: flex;
+        @include tablet {
+            width: 100vw;
+            height: 250px;
+            background: url(/img/gradation_background.jpg) top/cover;
+            @include centercontent;
+        }
     }
 
     &__left {
         @include centercontent;
         margin-right: 80px;
+        @include tablet {
+            margin :0;
+        }
+    }
+
+    &__right {
+        @include tablet {
+            display: none;
+        }
     }
 
     &__title { 

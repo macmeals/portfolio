@@ -16,6 +16,7 @@
 }
 
 .l-workheader {
+    z-index: 100;
     width: 100vw;
     @include centercontent;
 }

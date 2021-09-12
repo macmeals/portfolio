@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* PCはWidthが1200pxより大きい */
+/* タブレットはWidthが1200pxより小さい */
+/* スマホはWidthが700pxより小さい */
 .swiper-button-prev, .swiper-button-next {
   top: 85%;
 }
@@ -7,6 +11,13 @@
   color: black;
 }
 
+@media (max-width: 699px) {
+  .swiper-button-prev::after, .swiper-button-next::after {
+    top: 86%;
+    font-size: 16px;
+  }
+}
+
 .swiper-button-prev::before, .swiper-button-next::before {
   position: absolute;
   top: 90%;
@@ -14,6 +25,12 @@
   color: red;
   font-family: "my-thunder";
   font-size: 25px;
+}
+
+@media (max-width: 699px) {
+  .swiper-button-prev::before, .swiper-button-next::before {
+    font-size: 14px;
+  }
 }
 
 .swiper-button-prev::before, .swiper-button-prev::after {

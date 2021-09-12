@@ -13,9 +13,15 @@
         position: relative;
         
     }
+
+    @include smartphone {
+        height: 150px;
+    }
+
 }
 
 .l-workheader {
+    z-index: 100;
     width: 100vw;
     @include centercontent;
 }

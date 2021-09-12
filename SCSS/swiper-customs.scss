@@ -1,10 +1,17 @@
+@import "./foundation/mixin";
+
+
 // ページネーションの「PREV」「NEXT」の位置を調整
 .swiper-button-prev, .swiper-button-next {
   top: 85%;
   &::after {
     font-family:"my-against";
-    color: black;
-    
+    color: black; 
+    @include smartphone {
+     top: 86%;
+     font-size: 16px;
+    }
+   
   }
 
   &::before {
@@ -14,6 +21,9 @@
     color: red; 
     font-family: "my-thunder";
     font-size: 25px;
+    @include smartphone {
+      font-size: 14px;
+     }
   }
 }
 

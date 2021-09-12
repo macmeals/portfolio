@@ -8,6 +8,10 @@
     &__cat {
       width: $pc-djcat_width;
       height: $pc-djcat_height;
+        @include smartphone {
+          width: $sp-djcat_width;
+          height: $sp-djcat_height;
+        }
     }
     
     &__skull {
@@ -43,6 +47,9 @@
     &__slick {
       width: $pc-slick_width;
       height: $pc-slick_height;
+      @include smartphone {
+        height: $sp-slick_height;
+      }
     }
     
     &__otherwork {

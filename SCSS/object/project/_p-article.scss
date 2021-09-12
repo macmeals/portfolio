@@ -25,6 +25,7 @@
             flex-direction: column;
             > a {
                 margin: 20px 0 10px 0;
+                font-size: 30px;
             }
             > p {
                 margin: 0;
@@ -70,6 +71,7 @@
             flex-direction: column;
             > a {
                 margin: 20px 0 10px 0;
+                font-size: 30px;
             }
             > p {
                 margin: 0;
@@ -88,6 +90,7 @@
             flex-direction: column;
             > a {
                 margin: 20px 0 10px 0;
+                font-size: 30px;
             }
             > p {
                 margin: 0;
@@ -110,6 +113,7 @@
             flex-direction: column;
             > a {
                 margin: 20px 0 10px 0;
+                font-size: 30px;
             }
             > p {
                 margin: 0;
@@ -140,6 +144,7 @@
             flex-direction: column;
             > a {
                 margin: 20px 0 10px 0;
+                font-size: 30px;
             }
             > p {
                 margin: 0;
@@ -197,11 +202,14 @@
     font-family: "genkai-mincho";
     color: white;
     margin-bottom: 80px;
-    background-color: green;
-
+    
     @include tablet {
         grid-template-columns: repeat(2, 23vw);
+        grid-template-rows: repeat(3,60px);
         justify-content: center;
+    }
+    @include smartphone {
+        grid-template-columns: repeat(2, 30vw);
     }
     
     > li { 
@@ -211,8 +219,20 @@
            height: 80px;
            line-height: 80px;
            text-align: center;
+
+           @include tablet {
+               width: 30vw;
+               font-size: 16px;
+           }
+
+           @include smartphone {
+               width: 30vw;
+               font-size: 16px;
+           }
            
-            }
+           
+        
+        }
                   
 }
 
@@ -275,6 +295,10 @@
     &.swiper1 {
         width: 70vw;
         height: 500px;
+        @include smartphone {
+            height: 380px;
+        }
+
     }
  }
 

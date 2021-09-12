@@ -13,6 +13,11 @@
         position: relative;
         
     }
+
+    @include smartphone {
+        height: 150px;
+    }
+
 }
 
 .l-workheader {

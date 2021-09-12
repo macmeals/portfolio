@@ -1,5 +1,8 @@
-// ハンバーガー用の背景の基準点の指定
+// ハンバーガー用の背景の基準点の指定&ハンバーガーメニュー用
 .l-body {
-  position: relative;
   overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  
 }

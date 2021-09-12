@@ -2,20 +2,42 @@
     background: url(/img/gradation_background.jpg) top/cover;
     position: relative;
     height: 250px;
+
+    @include smartphone {
+        height: 150px;
+    }
     
     &__twitter {
         position: absolute;
         top: 180px;
         left: 10vw;
+
+        @include pc {
+            display: none;
+        }
+
+        @include smartphone {
+            top: 100px;
+        }
+
     }
 
     &__title {
         height: 250px;
         @include centercontent ;
         justify-content: center;
+
+        @include smartphone {
+            height: 150px;
+        }
        
         >a {
             font-size: 50px;
+
+            @include smartphone {
+                font-size: 30px;
+            }
+
         }
 
     }
@@ -39,6 +61,7 @@
     font-family: "my-against";
     @include smartphone {
         left: 80vw;
+        top: 30px ;
     }
 }   
 
@@ -54,10 +77,18 @@
     &.is-open {
         top:50%;
         left: calc(50% - 50px) ;
-        transition: all 2s;
-        
-        
+        transition: all 2s;  
     } 
+    @include tablet {
+        position: absolute;
+        left: 110%;
+        &.is-open {
+            top: 100px;
+            left: calc(50% - 50px) ;
+            transition: all 2s;  
+            z-index: 100;
+        }
+    }
 }
 
 
@@ -71,6 +102,9 @@
             height: 250px;
             background: url(/img/gradation_background.jpg) top/cover;
             @include centercontent;
+        }
+        @include smartphone {
+            height: 150px;
         }
     }
 
